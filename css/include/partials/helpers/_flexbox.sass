@@ -8,10 +8,23 @@ $column-width: 100% / $column-numbers
 		width: $i * $column-width
 		padding: 0 $unit-layout // Column gutters. Using padding as margin doens't work with % based widths.
 
+// For same-width block layouts (e.g. widgets), use the below instead of columns. 
+// Columns won't work if a background colour is set, as no spacing will appear in between them 
+// due to padding. 
+
+@for $i from 1 through $column-numbers 
+	.flex-grid-#{$i}
+		flex-wrap: wrap
+		> .flex-item
+			width: 100% / $i
+			padding: 0 $unit-layout // Column gutters. Using padding as margin doens't work with % based widths.
+			margin-bottom: $unit-layout
+
 // Creates a flex container. Negatives margins added to align child elements to side of container. 
 .flex-container, 
 .container-flex, 
-.flex-row
+.flex-row, 
+[class^="flex-grid"] 
 	display: flex
 	margin-left: -$unit-layout
 	margin-right: -$unit-layout
@@ -30,22 +43,13 @@ $column-width: 100% / $column-numbers
 		margin-right: 0 !important
 		> [class^="column"] 
 			padding: 0 !important
-	
-	&.wrap // Used for blocks, makes them wrap once total width is achieved.
-		flex-wrap: wrap
-		// For same-width block layouts (e.g. widgets), use the below instead of columns. 
-		// Columns won't work if a background colour is set, as no spacing will appear in between them 
-		// due to padding. 
-		> .flex-item
-			flex: 1
-			padding: 0 $unit-layout
-			margin-bottom: $unit-layout
-	
+
 	// Other Helpers
 	&.vertical
 		height: 100vh
+		flex-direction: column
 		> [class^="column"] 
-			height: 100vh
+			flex: 1
 
 // Moves an item to the right of the screen.
 .align-right
