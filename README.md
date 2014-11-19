@@ -2,6 +2,14 @@
 
 SASS framework. Gulp ready.
 
+## Referencing litchi-sass as a dependency to your project
+
+To reference litchi-sass, add the following into the <head>
+
+		<link rel="stylesheet" href="https://litchi-cdn.divshot.io/css/dependency/litchi.min.css">
+
+Please note that this dependency is a purely experimental approach at the moment. It defaults your fonts to Helvetica and Georgia, as well as some of the colours to match the litchi colour scheme.
+
 ## Setup
 
 ### Mac and Linux
