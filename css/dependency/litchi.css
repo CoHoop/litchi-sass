@@ -149,23 +149,23 @@ blockquote {
     border-color: #839ba3;
     color: #839ba3; }
   .button.primary, button.primary {
-    border-color: #8db600;
-    color: #8db600; }
+    border-color: #ff6961;
+    color: #ff6961; }
     .button.primary:hover, .button.primary:focus, button.primary:hover, button.primary:focus {
-      border-color: #739500;
-      color: #739500; }
+      border-color: #ff4a40;
+      color: #ff4a40; }
     .button.primary:active, button.primary:active {
-      border-color: #607b00;
-      color: #607b00; }
+      border-color: #ff3126;
+      color: #ff3126; }
   .button.secondary, button.secondary {
-    border-color: #007bbb;
-    color: #007bbb; }
+    border-color: #ff6961;
+    color: #ff6961; }
     .button.secondary:hover, .button.secondary:focus, button.secondary:hover, button.secondary:focus {
-      border-color: #00659a;
-      color: #00659a; }
+      border-color: #ff4a40;
+      color: #ff4a40; }
     .button.secondary:active, button.secondary:active {
-      border-color: #005480;
-      color: #005480; }
+      border-color: #ff3126;
+      color: #ff3126; }
   .button:disabled, button:disabled {
     background: #f8f9fa;
     border-color: #eef1f3;
@@ -426,11 +426,11 @@ textarea:invalid {
   border: 1px solid #b4c2c7;
   color: #b4c2c7; }
   .label.primary {
-    border-color: #8db600;
-    color: #8db600; }
+    border-color: #ff6961;
+    color: #ff6961; }
   .label.secondary {
-    border-color: #007bbb;
-    color: #007bbb; }
+    border-color: #ff6961;
+    color: #ff6961; }
   .label.numeric {
     -o-border-radius: 1.25rem;
     border-radius: 1.25rem;
@@ -795,7 +795,7 @@ a,
   transition: color 0.25s;
   cursor: pointer;
   text-decoration: underline;
-  color: #8db600; }
+  color: #ff6961; }
   a:hover, a:focus,
   .link:hover,
   .link:focus,
@@ -803,12 +803,12 @@ a,
   .link-primary:focus,
   .link-secondary:hover,
   .link-secondary:focus {
-    color: #739500; }
+    color: #ff4a40; }
   a.link-secondary,
   .link.link-secondary,
   .link-primary.link-secondary,
   .link-secondary.link-secondary {
-    color: #007bbb; }
+    color: #ff6961; }
     a.link-secondary:hover, a.link-secondary:focus,
     .link.link-secondary:hover,
     .link.link-secondary:focus,
@@ -816,7 +816,7 @@ a,
     .link-primary.link-secondary:focus,
     .link-secondary.link-secondary:hover,
     .link-secondary.link-secondary:focus {
-      color: #00659a; }
+      color: #ff4a40; }
 
 .wipe-margin, .no-margin {
   margin: 0 !important; }
