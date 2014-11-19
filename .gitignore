@@ -2,8 +2,6 @@
 .idea
 
 /node_modules
-/css/screen.css
-/css/screen.css.map
 
 .DS_Store
 .Spotlight-V100
