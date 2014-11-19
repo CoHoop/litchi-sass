@@ -4,6 +4,8 @@
 var gulp =
 	require("gulp"),
 	sass = require("gulp-ruby-sass"),
+	minifycss = require("gulp-minify-css"),
+	rename = require("gulp-rename"),
 	autoprefixer = require("gulp-autoprefixer"),
 	uglify = require("gulp-uglify"),
 	concat = require("gulp-concat"),
@@ -23,6 +25,22 @@ gulp.task("sass", function() {
 		.pipe(autoprefixer("last 2 version", "> 1%"))
 		.pipe(gulp.dest("css"))
 		.pipe(notify("SASS successfully compiled!"));
+
+});
+
+gulp.task("sass-litchi", function() {
+
+	gulp.src("css/include/litchi.sass")
+		.pipe(sass({
+			loadPath: process.cwd() + "/css/include",
+			style: "nested"
+		}))
+		.pipe(autoprefixer("last 2 version", "> 1%"))
+		.pipe(gulp.dest("css/dependency"))
+		.pipe(rename({suffix: ".min"}))
+		.pipe(minifycss())
+		.pipe(gulp.dest("css/dependency"))
+		.pipe(notify("SASS Litchi successfully compiled!"));
 
 });
 
