@@ -2,9 +2,9 @@
 
 SASS framework. Gulp ready.
 
-## Referencing litchi-sass as a dependency to your project
+## Referencing litchi-sass as a dependency
 
-To reference litchi-sass, add the following into the <head>
+To reference litchi-sass, add the following into the head tag:
 
 		<link rel="stylesheet" href="https://litchi-cdn.divshot.io/css/dependency/litchi.min.css">
 
