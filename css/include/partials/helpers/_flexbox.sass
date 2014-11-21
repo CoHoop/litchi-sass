@@ -55,3 +55,18 @@ $column-width: 100% / $column-numbers
 .align-right
 	align-self: flex-end
 	margin-left: auto !important
+
+.flex
+	display: flex
+
+	&.columns
+		flex-direction: column
+
+	&.row
+		flex-direction: row
+
+	&.center-vertically
+		align-items: center
+
+	&.center-horizontally
+		justify-content: center
