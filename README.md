@@ -43,7 +43,7 @@ In the directory where the project is checked out, execute the following:
 		# Setup gulp
 		npm install gulp -g
 		npm install gulp
-		npm install gulp-ruby-sass gulp-autoprefixer gulp-uglify gulp-concat gulp-notify
+		npm install gulp-ruby-sass gulp-minify-css gulp-rename gulp-autoprefixer gulp-uglify gulp-concat gulp-notify
 
 		# Start gulp monitoring of the sass files
 		gulp
