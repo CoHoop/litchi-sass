@@ -1,14 +1,15 @@
 {
-	"name": "litchi-cdn",
+	"name": "litchi",
 	"root": "/",
 	"clean_urls": true,
 	"prerender": true,
 	"error_page": "error.html",
 	"exclude": [
+		".sass-cache",
 		"/node_modules",
 		"gulpfile.js",
+		"push.sh",
 		"LICENSE",
-		"README.md",
-		".sass-cache"
+		"README.md"
 	]
 }
