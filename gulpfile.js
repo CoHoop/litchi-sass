@@ -36,10 +36,10 @@ gulp.task("sass-litchi", function() {
 			style: "nested"
 		}))
 		.pipe(autoprefixer("last 2 version", "> 1%"))
-		.pipe(gulp.dest("css/dependency"))
+		.pipe(gulp.dest("css/export"))
 		.pipe(rename({suffix: ".min"}))
 		.pipe(minifycss())
-		.pipe(gulp.dest("css/dependency"))
+		.pipe(gulp.dest("css/export"))
 		.pipe(notify("SASS Litchi successfully compiled!"));
 
 });
