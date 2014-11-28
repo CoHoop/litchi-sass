@@ -1,6 +1,6 @@
 {
 	"name": "litchi",
-	"root": "/",
+	"root": "/_www",
 	"clean_urls": true,
 	"prerender": true,
 	"error_page": "error.html",

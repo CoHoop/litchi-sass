@@ -3,6 +3,7 @@
 .idea
 
 /node_modules
+/_www
 
 .DS_Store
 .Spotlight-V100
