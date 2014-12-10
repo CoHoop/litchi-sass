@@ -89,11 +89,11 @@ gulp.task("forms", function() {
 
 });
 
-gulp.task("dropdowns", function() {
+gulp.task("drop-downs", function() {
 
-	gulp.src("css/_inc/dropdowns/dropdowns.sass")
+	gulp.src("css/_inc/drop-downs/drop-downs.sass")
 		.pipe(sass({
-			loadPath: process.cwd() + "/css/_inc/dropdowns",
+			loadPath: process.cwd() + "/css/_inc/drop-downs",
 			style: "nested"
 		}))
 		.pipe(autoprefixer({
@@ -104,7 +104,7 @@ gulp.task("dropdowns", function() {
 		.pipe(rename({suffix: ".min"}))
 		.pipe(minifycss())
 		.pipe(gulp.dest("css"))
-		.pipe(notify("DROPDOWNS successfully compiled!"));
+		.pipe(notify("DROP-DOWNS successfully compiled!"));
 
 });
 
@@ -114,7 +114,7 @@ gulp.task("watch", function() {
 	gulp.watch("css/_inc/alerts/**/*.sass", ["alerts"]);
 	gulp.watch("css/_inc/labels/**/*.sass", ["labels"]);
 	gulp.watch("css/_inc/forms/**/*.sass", ["forms"]);
-	gulp.watch("css/_inc/dropdowns/**/*.sass", ["dropdowns"]);
+	gulp.watch("css/_inc/drop-downs/**/*.sass", ["drop-downs"]);
 
 });
 

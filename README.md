@@ -1,14 +1,46 @@
 # litchi-sass
 
-SASS framework. Gulp ready.
+The light-weight SASS framework web artisans need.
 
-## Referencing litchi-sass as a dependency
+## Referencing litchi as a dependency
+
+Litchi SASS comes in multiple setups, which makes it both extremely light-weight and robust, if you wish.
+
+- Common
+- Forms
+- Labels
+- Alerts
+- Drop Downs
+
+### Common
 
 To reference litchi-sass, add the following into the head tag:
 
-		<link rel="stylesheet" href="https://litchi.io/include/latest/litchi.min.css">
+		<link rel="stylesheet" href="https://litchi.io/include/latest/common.min.css">
 
-Please note that this dependency is a purely experimental approach at the moment. It defaults your fonts to Helvetica and Georgia, as well as some of the colours to match the litchi colour scheme.
+### Forms
+
+To reference litchi-sass, add the following into the head tag:
+
+		<link rel="stylesheet" href="https://litchi.io/include/latest/forms.min.css">
+
+### Labels
+
+To reference litchi-sass, add the following into the head tag:
+
+		<link rel="stylesheet" href="https://litchi.io/include/latest/labels.min.css">
+
+### Alerts
+
+To reference litchi-sass, add the following into the head tag:
+
+		<link rel="stylesheet" href="https://litchi.io/include/latest/alerts.min.css">
+
+### Drop Downs
+
+To reference litchi-sass, add the following into the head tag:
+
+		<link rel="stylesheet" href="https://litchi.io/include/latest/dropdowns.min.css">
 
 ## Setup
 
