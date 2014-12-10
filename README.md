@@ -14,31 +14,31 @@ Litchi SASS comes in multiple setups, which makes it both extremely light-weight
 
 ### Common
 
-To reference litchi-sass, add the following into the head tag:
+To reference **common**, add the following into the head tag:
 
 		<link rel="stylesheet" href="https://litchi.io/include/latest/common.min.css">
 
 ### Forms
 
-To reference litchi-sass, add the following into the head tag:
+To reference **forms**, add the following into the head tag:
 
 		<link rel="stylesheet" href="https://litchi.io/include/latest/forms.min.css">
 
 ### Labels
 
-To reference litchi-sass, add the following into the head tag:
+To reference **labels**, add the following into the head tag:
 
 		<link rel="stylesheet" href="https://litchi.io/include/latest/labels.min.css">
 
 ### Alerts
 
-To reference litchi-sass, add the following into the head tag:
+To reference **alerts**, add the following into the head tag:
 
 		<link rel="stylesheet" href="https://litchi.io/include/latest/alerts.min.css">
 
 ### Drop Downs
 
-To reference litchi-sass, add the following into the head tag:
+To reference **drop-downs**, add the following into the head tag:
 
 		<link rel="stylesheet" href="https://litchi.io/include/latest/dropdowns.min.css">
 
