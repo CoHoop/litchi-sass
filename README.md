@@ -40,7 +40,7 @@ To reference **alerts**, add the following into the head tag:
 
 To reference **drop-downs**, add the following into the head tag:
 
-		<link rel="stylesheet" href="https://litchi.io/include/latest/dropdowns.min.css">
+		<link rel="stylesheet" href="https://litchi.io/include/latest/drop-downs.min.css">
 
 ## Setup
 
