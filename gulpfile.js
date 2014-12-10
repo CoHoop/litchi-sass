@@ -70,12 +70,51 @@ gulp.task("labels", function() {
 
 });
 
+gulp.task("forms", function() {
+
+	gulp.src("css/_inc/forms/forms.sass")
+		.pipe(sass({
+			loadPath: process.cwd() + "/css/_inc/forms",
+			style: "nested"
+		}))
+		.pipe(autoprefixer({
+			browsers: ["last 20 versions", "> 1%"],
+			cascade: false
+		}))
+		.pipe(gulp.dest("css"))
+		.pipe(rename({suffix: ".min"}))
+		.pipe(minifycss())
+		.pipe(gulp.dest("css"))
+		.pipe(notify("FORMS successfully compiled!"));
+
+});
+
+gulp.task("dropdowns", function() {
+
+	gulp.src("css/_inc/dropdowns/dropdowns.sass")
+		.pipe(sass({
+			loadPath: process.cwd() + "/css/_inc/dropdowns",
+			style: "nested"
+		}))
+		.pipe(autoprefixer({
+			browsers: ["last 20 versions", "> 1%"],
+			cascade: false
+		}))
+		.pipe(gulp.dest("css"))
+		.pipe(rename({suffix: ".min"}))
+		.pipe(minifycss())
+		.pipe(gulp.dest("css"))
+		.pipe(notify("DROPDOWNS successfully compiled!"));
+
+});
 
 gulp.task("watch", function() {
 
 	gulp.watch("css/_inc/common/**/*.sass", ["common"]);
 	gulp.watch("css/_inc/alerts/**/*.sass", ["alerts"]);
 	gulp.watch("css/_inc/labels/**/*.sass", ["labels"]);
+	gulp.watch("css/_inc/forms/**/*.sass", ["forms"]);
+	gulp.watch("css/_inc/dropdowns/**/*.sass", ["dropdowns"]);
 
 });
 
