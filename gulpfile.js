@@ -7,57 +7,75 @@ var gulp =
 	minifycss = require("gulp-minify-css"),
 	rename = require("gulp-rename"),
 	autoprefixer = require("gulp-autoprefixer"),
-	uglify = require("gulp-uglify"),
-	concat = require("gulp-concat"),
 	notify = require("gulp-notify");
 
 
 /*
  * Gulp tasks
  */
-gulp.task("sass", function() {
+gulp.task("common", function() {
 
-	gulp.src("css/include/screen.sass")
+	gulp.src("css/_inc/common/common.sass")
 		.pipe(sass({
-			loadPath: process.cwd() + "/css/include",
+			loadPath: process.cwd() + "/css/_inc/common",
 			style: "nested"
 		}))
-		.pipe(autoprefixer("last 2 version", "> 1%"))
+		.pipe(autoprefixer({
+			browsers: ["last 20 versions", "> 1%"],
+			cascade: false
+		}))
 		.pipe(gulp.dest("css"))
-		.pipe(notify("SASS successfully compiled!"));
-
-});
-
-gulp.task("sass-litchi", function() {
-
-	gulp.src("css/include/litchi.sass")
-		.pipe(sass({
-			loadPath: process.cwd() + "/css/include",
-			style: "nested"
-		}))
-		.pipe(autoprefixer("last 2 version", "> 1%"))
-		.pipe(gulp.dest("css/export"))
 		.pipe(rename({suffix: ".min"}))
 		.pipe(minifycss())
-		.pipe(gulp.dest("css/export"))
-		.pipe(notify("SASS Litchi successfully compiled!"));
+		.pipe(gulp.dest("css"))
+		.pipe(notify("COMMON successfully compiled!"));
 
 });
 
-gulp.task("uglify", function() {
+gulp.task("alerts", function() {
 
-	gulp.src("js/include/*.js")
-		.pipe(concat("app.js"))
-		.pipe(uglify("app.js"))
-		.pipe(gulp.dest("js"))
-		.pipe(notify("JavaScript successfully compiled!"));
+	gulp.src("css/_inc/alerts/alerts.sass")
+		.pipe(sass({
+			loadPath: process.cwd() + "/css/_inc/alerts",
+			style: "nested"
+		}))
+		.pipe(autoprefixer({
+			browsers: ["last 20 versions", "> 1%"],
+			cascade: false
+		}))
+		.pipe(gulp.dest("css"))
+		.pipe(rename({suffix: ".min"}))
+		.pipe(minifycss())
+		.pipe(gulp.dest("css"))
+		.pipe(notify("ALERTS successfully compiled!"));
 
 });
+
+gulp.task("labels", function() {
+
+	gulp.src("css/_inc/labels/labels.sass")
+		.pipe(sass({
+			loadPath: process.cwd() + "/css/_inc/labels",
+			style: "nested"
+		}))
+		.pipe(autoprefixer({
+			browsers: ["last 20 versions", "> 1%"],
+			cascade: false
+		}))
+		.pipe(gulp.dest("css"))
+		.pipe(rename({suffix: ".min"}))
+		.pipe(minifycss())
+		.pipe(gulp.dest("css"))
+		.pipe(notify("LABELS successfully compiled!"));
+
+});
+
 
 gulp.task("watch", function() {
 
-	gulp.watch("css/include/**/*.sass", ["sass"]);
-	gulp.watch("js/include/*.js", ["uglify"]);
+	gulp.watch("css/_inc/common/**/*.sass", ["common"]);
+	gulp.watch("css/_inc/alerts/**/*.sass", ["alerts"]);
+	gulp.watch("css/_inc/labels/**/*.sass", ["labels"]);
 
 });
 
