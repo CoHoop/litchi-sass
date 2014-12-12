@@ -4,7 +4,11 @@ The light-weight SASS framework web artisans need.
 
 ## Referencing litchi as a dependency
 
-Litchi SASS comes in multiple setups, which makes it both extremely light-weight and robust, if you wish.
+To reference litchi as a whole, use:
+
+		<link rel="stylesheet" href="https://litchi.io/include/latest/litchi.min.css">
+
+However, litchi SASS comes in multiple micro setups, which can help you keep your css dependencies extremely light-weight. Depending on your project setup and scale, feel free to choose from the below and manage in a way that fits your needs.
 
 - Common
 - Forms
