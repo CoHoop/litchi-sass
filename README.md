@@ -11,10 +11,10 @@ To reference litchi as a whole, use:
 However, litchi SASS comes in multiple micro setups, which helps web developers keep css dependencies solutions extremely light-weight. Depending on your project setup and scale, feel free to choose from the below and manage in a way that fits your needs.
 
 - Common
-- Forms
-- Labels
 - Alerts
-- Drop Downs
+- Drop Downs *(WIP)*
+- Forms *(WIP)*
+- Labels
 
 ### Common
 
@@ -22,7 +22,19 @@ To reference **common**, add the following into the head tag:
 
 		<link rel="stylesheet" href="https://litchi.io/include/latest/common.min.css">
 
-### Forms
+### Alerts
+
+To reference **alerts**, add the following into the head tag:
+
+		<link rel="stylesheet" href="https://litchi.io/include/latest/alerts.min.css">
+
+### Drop Downs *(WIP)*
+
+To reference **drop-downs**, add the following into the head tag:
+
+		<link rel="stylesheet" href="https://litchi.io/include/latest/drop-downs.min.css">
+
+### Forms *(WIP)*
 
 To reference **forms**, add the following into the head tag:
 
@@ -33,18 +45,6 @@ To reference **forms**, add the following into the head tag:
 To reference **labels**, add the following into the head tag:
 
 		<link rel="stylesheet" href="https://litchi.io/include/latest/labels.min.css">
-
-### Alerts
-
-To reference **alerts**, add the following into the head tag:
-
-		<link rel="stylesheet" href="https://litchi.io/include/latest/alerts.min.css">
-
-### Drop Downs
-
-To reference **drop-downs**, add the following into the head tag:
-
-		<link rel="stylesheet" href="https://litchi.io/include/latest/drop-downs.min.css">
 
 ## Setup
 
