@@ -31,7 +31,7 @@ if [ $branch_name == "master" ]; then
 
 			# git push origin $branch_name
 
-			printf "\n\nThe release has been made successfully!"
+			printf "\n\nThe release has been made successfully!\n"
 
 			break;;
 	        No )
