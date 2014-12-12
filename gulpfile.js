@@ -108,6 +108,26 @@ gulp.task("drop-downs", function() {
 
 });
 
+// TODO
+gulp.task("litchi", function() {
+
+	gulp.src("css/_inc/litchi.sass")
+		.pipe(sass({
+			loadPath: process.cwd() + "/css/_inc",
+			style: "nested"
+		}))
+		.pipe(autoprefixer({
+			browsers: ["last 20 versions", "> 1%"],
+			cascade: false
+		}))
+		.pipe(gulp.dest("css"))
+		.pipe(rename({suffix: ".min"}))
+		.pipe(minifycss())
+		.pipe(gulp.dest("css"))
+		.pipe(notify("LITCHI successfully compiled!"));
+
+});
+
 gulp.task("watch", function() {
 
 	gulp.watch("css/_inc/common/**/*.sass", ["common"]);

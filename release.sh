@@ -11,6 +11,15 @@ if [ $branch_name == "master" ]; then
 	select yn in "Yes" "No"; do
 	    case $yn in
 	        Yes )
+			# Runs gulp tasks to ensure all is up-to-date
+
+			gulp common
+			gulp alerts
+			gulp drop-downs
+			gulp forms
+			gulp labels
+			gulp litchi
+
 			# Copies all exported css files
 
 			find css -name \*.css | xargs -I FILE cp FILE ../litchi-www/www/include/latest
@@ -22,7 +31,7 @@ if [ $branch_name == "master" ]; then
 
 			# git push origin $branch_name
 
-			echo "\n\nThe release has been made successfully!"
+			printf "\n\nThe release has been made successfully!"
 
 			break;;
 	        No )
