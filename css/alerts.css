@@ -3,7 +3,7 @@
   -o-border-radius: 3px;
   border-radius: 3px;
   padding: rem(16px);
-  background: #f2e03d;
+  background: #F2E03D;
   color: #d4c10e;
   border: 1px solid #ecd610;
   margin: 0 0 rem(16px);
@@ -18,7 +18,7 @@
     .alert .close:hover, .alert .close:focus {
       color: #bcab0d; }
   .alert.info {
-    background: #00aeef;
+    background: #00AEEF;
     color: #003f56;
     border: 1px solid #00516f; }
     .alert.info .close {
@@ -26,7 +26,7 @@
       .alert.info .close:hover, .alert.info .close:focus {
         color: #002c3c; }
   .alert.success {
-    background: #d1f252;
+    background: #D1F252;
     color: #bae611;
     border: 1px solid #c4ee23; }
     .alert.success .close {
@@ -34,7 +34,7 @@
       .alert.success .close:hover, .alert.success .close:focus {
         color: #a7ce10; }
   .alert.error {
-    background: #f25641;
+    background: #F25641;
     color: #901a0a;
     border: 1px solid #a81e0b; }
     .alert.error .close {
