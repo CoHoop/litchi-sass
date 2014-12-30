@@ -33,7 +33,7 @@ article, aside, footer, header, menu, nav, section {
 table, tbody, tr, th, td {
   border-collapse: collapse;
   border-spacing: 0;
-  font-size: rem(16px); }
+  font-size: 1rem; }
 
 nav ul {
   list-style: none; }
@@ -54,7 +54,7 @@ hr {
   display: block;
   height: 1px;
   border-top: 1px solid #eef1f3;
-  margin: rem(32px) 0; }
+  margin: 2rem 0; }
 
 strong, b {
   font-weight: 700; }
@@ -64,15 +64,15 @@ em, i {
 
 blockquote {
   border-left: 4px solid #eef1f3;
-  padding-left: rem(24px);
-  margin: rem(16px) 0; }
+  padding-left: 1.5rem;
+  margin: 1rem 0; }
   blockquote p {
     margin-top: 0;
     font-size: 1.125rem; }
   blockquote small {
     font-weight: 500;
     font-style: italic;
-    font-size: rem(16px); }
+    font-size: 1rem; }
 
 a,
 .link {
@@ -90,7 +90,7 @@ a,
 
 ul, ol {
   line-height: 1.5;
-  margin: 0 0 rem(16px) rem(24px); }
+  margin: 0 0 1rem 1.5rem; }
   ul li, ol li {
     margin: 0; }
   ul:last-child, ol:last-child {
@@ -100,7 +100,7 @@ dl {
   line-height: 1.5; }
   dl dt {
     font-weight: 700;
-    margin: rem(8px) 0 0; }
+    margin: 0.5rem 0 0; }
     dl dt:first-of-type {
       margin-top: 0; }
   dl dd {
@@ -111,7 +111,7 @@ table {
   max-width: 100%; }
   table tr td {
     border: 1px solid #d1dadd;
-    padding: rem(8px) rem(16px);
+    padding: 0.5rem 1rem;
     color: #52676e; }
   table thead td, table tfoot td {
     font-weight: 700;
@@ -122,17 +122,17 @@ p, h1, h2, h3, h4, h5, h6 {
   line-height: 1.5; }
 
 p {
-  margin: rem(16px) 0; }
+  margin: 1rem 0; }
   p:last-child {
     margin-bottom: 0; }
   p:first-child {
     margin-top: 0; }
 
 h1, h2, h3 {
-  margin: rem(32px) 0 rem(16px); }
+  margin: 2rem 0 1rem; }
 
 h4, h5, h6 {
-  margin: rem(16px) 0 rem(8px); }
+  margin: 1rem 0 0.5rem; }
 
 h1 {
   font-size: 2.375rem; }
@@ -161,51 +161,51 @@ h1, h2, h3, h4, h5, h6 {
 
 .columns-1 {
   width: 8.33333%;
-  padding: 0 rem(16px); }
+  padding: 0 1rem; }
 
 .columns-2 {
   width: 16.66667%;
-  padding: 0 rem(16px); }
+  padding: 0 1rem; }
 
 .columns-3 {
   width: 25%;
-  padding: 0 rem(16px); }
+  padding: 0 1rem; }
 
 .columns-4 {
   width: 33.33333%;
-  padding: 0 rem(16px); }
+  padding: 0 1rem; }
 
 .columns-5 {
   width: 41.66667%;
-  padding: 0 rem(16px); }
+  padding: 0 1rem; }
 
 .columns-6 {
   width: 50%;
-  padding: 0 rem(16px); }
+  padding: 0 1rem; }
 
 .columns-7 {
   width: 58.33333%;
-  padding: 0 rem(16px); }
+  padding: 0 1rem; }
 
 .columns-8 {
   width: 66.66667%;
-  padding: 0 rem(16px); }
+  padding: 0 1rem; }
 
 .columns-9 {
   width: 75%;
-  padding: 0 rem(16px); }
+  padding: 0 1rem; }
 
 .columns-10 {
   width: 83.33333%;
-  padding: 0 rem(16px); }
+  padding: 0 1rem; }
 
 .columns-11 {
   width: 91.66667%;
-  padding: 0 rem(16px); }
+  padding: 0 1rem; }
 
 .columns-12 {
   width: 100%;
-  padding: 0 rem(16px); }
+  padding: 0 1rem; }
 
 .flex-grid-1 {
   -webkit-flex-wrap: wrap;
@@ -213,8 +213,8 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap; }
   .flex-grid-1 > .flex-item {
     width: 100%;
-    padding: 0 rem(16px);
-    margin-bottom: rem(16px); }
+    padding: 0 1rem;
+    margin-bottom: 1rem; }
 
 .flex-grid-2 {
   -webkit-flex-wrap: wrap;
@@ -222,8 +222,8 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap; }
   .flex-grid-2 > .flex-item {
     width: 50%;
-    padding: 0 rem(16px);
-    margin-bottom: rem(16px); }
+    padding: 0 1rem;
+    margin-bottom: 1rem; }
 
 .flex-grid-3 {
   -webkit-flex-wrap: wrap;
@@ -231,8 +231,8 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap; }
   .flex-grid-3 > .flex-item {
     width: 33.33333%;
-    padding: 0 rem(16px);
-    margin-bottom: rem(16px); }
+    padding: 0 1rem;
+    margin-bottom: 1rem; }
 
 .flex-grid-4 {
   -webkit-flex-wrap: wrap;
@@ -240,8 +240,8 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap; }
   .flex-grid-4 > .flex-item {
     width: 25%;
-    padding: 0 rem(16px);
-    margin-bottom: rem(16px); }
+    padding: 0 1rem;
+    margin-bottom: 1rem; }
 
 .flex-grid-5 {
   -webkit-flex-wrap: wrap;
@@ -249,8 +249,8 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap; }
   .flex-grid-5 > .flex-item {
     width: 20%;
-    padding: 0 rem(16px);
-    margin-bottom: rem(16px); }
+    padding: 0 1rem;
+    margin-bottom: 1rem; }
 
 .flex-grid-6 {
   -webkit-flex-wrap: wrap;
@@ -258,8 +258,8 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap; }
   .flex-grid-6 > .flex-item {
     width: 16.66667%;
-    padding: 0 rem(16px);
-    margin-bottom: rem(16px); }
+    padding: 0 1rem;
+    margin-bottom: 1rem; }
 
 .flex-grid-7 {
   -webkit-flex-wrap: wrap;
@@ -267,8 +267,8 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap; }
   .flex-grid-7 > .flex-item {
     width: 14.28571%;
-    padding: 0 rem(16px);
-    margin-bottom: rem(16px); }
+    padding: 0 1rem;
+    margin-bottom: 1rem; }
 
 .flex-grid-8 {
   -webkit-flex-wrap: wrap;
@@ -276,8 +276,8 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap; }
   .flex-grid-8 > .flex-item {
     width: 12.5%;
-    padding: 0 rem(16px);
-    margin-bottom: rem(16px); }
+    padding: 0 1rem;
+    margin-bottom: 1rem; }
 
 .flex-grid-9 {
   -webkit-flex-wrap: wrap;
@@ -285,8 +285,8 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap; }
   .flex-grid-9 > .flex-item {
     width: 11.11111%;
-    padding: 0 rem(16px);
-    margin-bottom: rem(16px); }
+    padding: 0 1rem;
+    margin-bottom: 1rem; }
 
 .flex-grid-10 {
   -webkit-flex-wrap: wrap;
@@ -294,8 +294,8 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap; }
   .flex-grid-10 > .flex-item {
     width: 10%;
-    padding: 0 rem(16px);
-    margin-bottom: rem(16px); }
+    padding: 0 1rem;
+    margin-bottom: 1rem; }
 
 .flex-grid-11 {
   -webkit-flex-wrap: wrap;
@@ -303,8 +303,8 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap; }
   .flex-grid-11 > .flex-item {
     width: 9.09091%;
-    padding: 0 rem(16px);
-    margin-bottom: rem(16px); }
+    padding: 0 1rem;
+    margin-bottom: 1rem; }
 
 .flex-grid-12 {
   -webkit-flex-wrap: wrap;
@@ -312,8 +312,8 @@ h1, h2, h3, h4, h5, h6 {
   flex-wrap: wrap; }
   .flex-grid-12 > .flex-item {
     width: 8.33333%;
-    padding: 0 rem(16px);
-    margin-bottom: rem(16px); }
+    padding: 0 1rem;
+    margin-bottom: 1rem; }
 
 .flex-container,
 .container-flex,
@@ -324,24 +324,24 @@ h1, h2, h3, h4, h5, h6 {
   display: -moz-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: -rem(16px);
-  margin-right: -rem(16px); }
+  margin-left: -1rem;
+  margin-right: -1rem; }
   .flex-container.gutter-half,
   .container-flex.gutter-half,
   .flex-row.gutter-half,
   [class^="flex-grid"].gutter-half {
-    margin-left: -rem(8px);
-    margin-right: -rem(8px); }
+    margin-left: -0.5rem;
+    margin-right: -0.5rem; }
     .flex-container.gutter-half > [class^="column"],
     .container-flex.gutter-half > [class^="column"],
     .flex-row.gutter-half > [class^="column"],
     [class^="flex-grid"].gutter-half > [class^="column"] {
-      padding: 0 rem(8px) !important; }
+      padding: 0 0.5rem !important; }
     .flex-container.gutter-half > .flex-item,
     .container-flex.gutter-half > .flex-item,
     .flex-row.gutter-half > .flex-item,
     [class^="flex-grid"].gutter-half > .flex-item {
-      padding: 0 rem(8px) !important; }
+      padding: 0 0.5rem !important; }
   .flex-container.full-bleed,
   .container-flex.full-bleed,
   .flex-row.full-bleed,
@@ -539,32 +539,32 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0; }
 
 .padding-vertical.base-unit-layout {
-  padding: rem(16px) 0; }
+  padding: 1rem 0; }
 .padding-vertical.double-unit-layout {
-  padding: rem(32px) 0; }
+  padding: 2rem 0; }
 .padding-vertical.triple-unit-layout {
-  padding: rem(48px) 0; }
+  padding: 3rem 0; }
 
 .padding-horizontal.base-unit-layout {
-  padding: 0 rem(16px); }
+  padding: 0 1rem; }
 .padding-horizontal.double-unit-layout {
-  padding: 0 rem(32px); }
+  padding: 0 2rem; }
 .padding-horizontal.triple-unit-layout {
-  padding: 0 rem(48px); }
+  padding: 0 3rem; }
 
 .margin-vertical.base-unit-layout {
-  margin: rem(16px) 0; }
+  margin: 1rem 0; }
 .margin-vertical.double-unit-layout {
-  margin: rem(32px) 0; }
+  margin: 2rem 0; }
 .margin-vertical.triple-unit-layout {
-  margin: rem(48px) 0; }
+  margin: 3rem 0; }
 
 .margin-horizontal.base-unit-layout {
-  margin: 0 rem(16px); }
+  margin: 0 1rem; }
 .margin-horizontal.double-unit-layout {
-  margin: 0 rem(32px); }
+  margin: 0 2rem; }
 .margin-horizontal.triple-unit-layout {
-  margin: 0 rem(48px); }
+  margin: 0 3rem; }
 
 .text-center {
   text-align: center; }
@@ -608,4 +608,4 @@ footer {
   color: #b4c2c7;
   font-size: 0.75rem;
   text-align: center;
-  padding: rem(48px) rem(16px); }
+  padding: 3rem 1rem; }

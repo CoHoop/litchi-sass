@@ -2,19 +2,19 @@
   -webkit-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
-  padding: rem(16px);
+  padding: 1rem;
   background: #f2e03d;
   color: #d4c10e;
   border: 1px solid #ecd610;
-  margin: 0 0 rem(16px);
+  margin: 0 0 1rem;
   line-height: 1.5;
   position: relative;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: rem(16px); }
+  font-size: 1rem; }
   .alert .close {
     color: #d4c10e;
-    top: rem(16px);
-    right: rem(16px); }
+    top: 1rem;
+    right: 1rem; }
     .alert .close:hover, .alert .close:focus {
       color: #bcab0d; }
   .alert.info {

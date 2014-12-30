@@ -14,32 +14,32 @@
   padding: 0; }
 
 .padding-vertical.base-unit-layout {
-  padding: rem(16px) 0; }
+  padding: 1rem 0; }
 .padding-vertical.double-unit-layout {
-  padding: rem(32px) 0; }
+  padding: 2rem 0; }
 .padding-vertical.triple-unit-layout {
-  padding: rem(48px) 0; }
+  padding: 3rem 0; }
 
 .padding-horizontal.base-unit-layout {
-  padding: 0 rem(16px); }
+  padding: 0 1rem; }
 .padding-horizontal.double-unit-layout {
-  padding: 0 rem(32px); }
+  padding: 0 2rem; }
 .padding-horizontal.triple-unit-layout {
-  padding: 0 rem(48px); }
+  padding: 0 3rem; }
 
 .margin-vertical.base-unit-layout {
-  margin: rem(16px) 0; }
+  margin: 1rem 0; }
 .margin-vertical.double-unit-layout {
-  margin: rem(32px) 0; }
+  margin: 2rem 0; }
 .margin-vertical.triple-unit-layout {
-  margin: rem(48px) 0; }
+  margin: 3rem 0; }
 
 .margin-horizontal.base-unit-layout {
-  margin: 0 rem(16px); }
+  margin: 0 1rem; }
 .margin-horizontal.double-unit-layout {
-  margin: 0 rem(32px); }
+  margin: 0 2rem; }
 .margin-horizontal.triple-unit-layout {
-  margin: 0 rem(48px); }
+  margin: 0 3rem; }
 
 .text-center {
   text-align: center; }
@@ -89,7 +89,7 @@ button,
   font-size: 0.875rem;
   outline: none;
   color: #68838c;
-  margin: 0 0 rem(16px);
+  margin: 0 0 1rem;
   text-decoration: none; }
   input::-webkit-input-placeholder,
   select::-webkit-input-placeholder,
@@ -155,13 +155,13 @@ button,
 
 select {
   -webkit-appearance: none;
-  background: url("/images/icons/grey/arrow-bottom.svg") no-repeat right rem(16px) top 50%;
-  -webkit-background-size: rem(8px) rem(8px);
-  -o-background-size: rem(8px);
-  background-size: rem(8px); }
+  background: url("/images/icons/grey/arrow-bottom.svg") no-repeat right 1rem top 50%;
+  -webkit-background-size: 0.5rem 0.5rem;
+  -o-background-size: 0.5rem;
+  background-size: 0.5rem; }
 
 textarea {
-  min-height: rem(64px);
+  min-height: 4rem;
   resize: vertical; }
 
 input:invalid,
@@ -178,7 +178,7 @@ textarea:invalid {
 .file-button {
   position: relative;
   overflow: hidden;
-  margin: 0 0 rem(16px); }
+  margin: 0 0 1rem; }
   .file-button input[type="file"] {
     position: absolute;
     left: 0;
@@ -195,7 +195,7 @@ textarea:invalid {
   display: none; }
 .checkbox-holder .checkbox, .checkbox-holder .radio-button, .radio-button-holder .checkbox, .radio-button-holder .radio-button {
   zoom: 1;
-  height: rem(24px);
+  height: 1.5rem;
   position: relative;
   cursor: pointer; }
   .checkbox-holder .checkbox:before, .checkbox-holder .checkbox:after, .checkbox-holder .radio-button:before, .checkbox-holder .radio-button:after, .radio-button-holder .checkbox:before, .radio-button-holder .checkbox:after, .radio-button-holder .radio-button:before, .radio-button-holder .radio-button:after {
@@ -212,13 +212,13 @@ textarea:invalid {
     -o-transition: all 0.25s;
     transition: all 0.25s;
     border: 1px solid #d1dadd;
-    width: rem(16px)-0.125rem;
-    height: rem(16px)-0.125rem;
+    width: 0.875rem;
+    height: 0.875rem;
     display: block;
     position: absolute;
     top: 50%;
     left: 0;
-    margin: -rem(8px)-0.0625rem 0 0;
+    margin: -0.4375rem 0 0;
     cursor: pointer; }
     .checkbox-holder .checkbox .indicator:after, .checkbox-holder .radio-button .indicator:after, .radio-button-holder .checkbox .indicator:after, .radio-button-holder .radio-button .indicator:after {
       -webkit-border-radius: 2px;
@@ -234,15 +234,15 @@ textarea:invalid {
       position: absolute;
       left: 50%;
       top: 50%;
-      width: rem(8px);
-      height: rem(8px);
+      width: 0.5rem;
+      height: 0.5rem;
       background: #d1dadd;
-      margin-top: -rem(8px)/2;
-      margin-left: -rem(8px)/2; }
+      margin-top: -0.25rem;
+      margin-left: -0.25rem; }
   .checkbox-holder .checkbox label, .checkbox-holder .radio-button label, .radio-button-holder .checkbox label, .radio-button-holder .radio-button label {
-    padding: 0 0 0 rem(24px);
-    height: rem(24px);
-    line-height: rem(24px);
+    padding: 0 0 0 1.5rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
     font-size: 0.875rem;
     cursor: pointer; }
   .checkbox-holder .checkbox:hover .indicator, .checkbox-holder .checkbox:focus .indicator, .checkbox-holder .radio-button:hover .indicator, .checkbox-holder .radio-button:focus .indicator, .radio-button-holder .checkbox:hover .indicator, .radio-button-holder .checkbox:focus .indicator, .radio-button-holder .radio-button:hover .indicator, .radio-button-holder .radio-button:focus .indicator {
@@ -306,16 +306,16 @@ textarea:invalid {
   -webkit-background-size: 22px 22px;
   -o-background-size: 22px 22px;
   background-size: 22px 22px;
-  min-height: rem(32px);
+  min-height: 2rem;
   display: none;
-  margin: 0 0 rem(16px); }
+  margin: 0 0 1rem; }
 
 .button, button {
   background: white;
   text-decoration: none;
-  padding: rem(16px);
-  padding-left: rem(24px);
-  padding-right: rem(24px);
+  padding: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   cursor: pointer;
   border-color: #d1dadd;
   color: #b4c2c7;
