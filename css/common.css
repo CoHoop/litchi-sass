@@ -3,17 +3,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-html, body, div, span, object, iframe, hr,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, b, sub, sup, var, i, em,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend, input, button, textarea, select,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
+html, body, div, span, object, iframe, hr, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, b, sub, sup, var, i, em, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input, button, textarea, select, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -39,7 +29,7 @@ nav ul {
   list-style: none; }
 
 mark {
-  background-color: #f0f012;
+  background-color: #F0F012;
   color: #181e20;
   font-weight: 500; }
 
@@ -74,18 +64,15 @@ blockquote {
     font-style: italic;
     font-size: 1rem; }
 
-a,
-.link {
+a, .link {
   -webkit-transition: color 0.25s;
   -moz-transition: color 0.25s;
   -o-transition: color 0.25s;
   transition: color 0.25s;
   cursor: pointer;
   text-decoration: underline;
-  color: #ff6961; }
-  a:hover, a:focus,
-  .link:hover,
-  .link:focus {
+  color: #FF6961; }
+  a:hover, a:focus, .link:hover, .link:focus {
     color: #ff453b; }
 
 ul, ol {
@@ -315,10 +302,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0 1rem;
     margin-bottom: 1rem; }
 
-.flex-container,
-.container-flex,
-.flex-row,
-[class^="flex-grid"] {
+.flex-container, .container-flex, .flex-row, [class^="flex-grid"] {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -326,37 +310,19 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   margin-left: -1rem;
   margin-right: -1rem; }
-  .flex-container.gutter-half,
-  .container-flex.gutter-half,
-  .flex-row.gutter-half,
-  [class^="flex-grid"].gutter-half {
+  .flex-container.gutter-half, .container-flex.gutter-half, .flex-row.gutter-half, [class^="flex-grid"].gutter-half {
     margin-left: -0.5rem;
     margin-right: -0.5rem; }
-    .flex-container.gutter-half > [class^="column"],
-    .container-flex.gutter-half > [class^="column"],
-    .flex-row.gutter-half > [class^="column"],
-    [class^="flex-grid"].gutter-half > [class^="column"] {
+    .flex-container.gutter-half > [class^="column"], .container-flex.gutter-half > [class^="column"], .flex-row.gutter-half > [class^="column"], [class^="flex-grid"].gutter-half > [class^="column"] {
       padding: 0 0.5rem !important; }
-    .flex-container.gutter-half > .flex-item,
-    .container-flex.gutter-half > .flex-item,
-    .flex-row.gutter-half > .flex-item,
-    [class^="flex-grid"].gutter-half > .flex-item {
+    .flex-container.gutter-half > .flex-item, .container-flex.gutter-half > .flex-item, .flex-row.gutter-half > .flex-item, [class^="flex-grid"].gutter-half > .flex-item {
       padding: 0 0.5rem !important; }
-  .flex-container.full-bleed,
-  .container-flex.full-bleed,
-  .flex-row.full-bleed,
-  [class^="flex-grid"].full-bleed {
+  .flex-container.full-bleed, .container-flex.full-bleed, .flex-row.full-bleed, [class^="flex-grid"].full-bleed {
     margin-left: 0 !important;
     margin-right: 0 !important; }
-    .flex-container.full-bleed > [class^="column"],
-    .container-flex.full-bleed > [class^="column"],
-    .flex-row.full-bleed > [class^="column"],
-    [class^="flex-grid"].full-bleed > [class^="column"] {
+    .flex-container.full-bleed > [class^="column"], .container-flex.full-bleed > [class^="column"], .flex-row.full-bleed > [class^="column"], [class^="flex-grid"].full-bleed > [class^="column"] {
       padding: 0 !important; }
-  .flex-container.vertical,
-  .container-flex.vertical,
-  .flex-row.vertical,
-  [class^="flex-grid"].vertical {
+  .flex-container.vertical, .container-flex.vertical, .flex-row.vertical, [class^="flex-grid"].vertical {
     height: 100vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -365,10 +331,7 @@ h1, h2, h3, h4, h5, h6 {
     -moz-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
-    .flex-container.vertical > [class^="column"],
-    .container-flex.vertical > [class^="column"],
-    .flex-row.vertical > [class^="column"],
-    [class^="flex-grid"].vertical > [class^="column"] {
+    .flex-container.vertical > [class^="column"], .container-flex.vertical > [class^="column"], .flex-row.vertical > [class^="column"], [class^="flex-grid"].vertical > [class^="column"] {
       -webkit-box-flex: 1;
       -webkit-flex: 1;
       -moz-box-flex: 1;
@@ -501,20 +464,16 @@ h1, h2, h3, h4, h5, h6 {
   flex: 12; }
 
 .greyscale {
-  -moz-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
   -webkit-filter: grayscale(100%);
-  filter: gray;
-  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale"); }
+  filter: grayscale(100%); }
 
 .block-center, .container-full-screen, .container-narrow {
   margin-left: auto;
   margin-right: auto; }
 
-.block,
-.show {
+.block, .show {
   display: block; }
-  .block.block,
-  .show.block {
+  .block.block, .show.block {
     min-width: 100%; }
 
 .is-hidden {
@@ -523,18 +482,13 @@ h1, h2, h3, h4, h5, h6 {
 .is-invisible {
   visibility: hidden; }
 
-.wipe-margin,
-.no-margin {
+.wipe-margin, .no-margin {
   margin: 0 !important; }
 
-.wipe-padding,
-.no-padding {
+.wipe-padding, .no-padding {
   padding: 0 !important; }
 
-.wipe-margin-padding,
-.no-margin-padding,
-.wipe-padding-margin,
-.no-padding-margin {
+.wipe-margin-padding, .no-margin-padding, .wipe-padding-margin, .no-padding-margin {
   margin: 0;
   padding: 0; }
 

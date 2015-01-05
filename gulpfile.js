@@ -5,17 +5,27 @@ var gulp = require("gulp"),
 	autoprefixer = require("gulp-autoprefixer"),
 	uglify = require("gulp-uglify"),
 	concat = require("gulp-concat"),
+	plumber = require("gulp-plumber"),
 	notify = require("gulp-notify");
+
+var onError = notify.onError({
+	title: "Your SASS is broken!",
+	subtitle: "<%= file %> did not compile!",
+	message: "<%= error.message %>"
+});
 
 function compileSass (name, pathToSass) {
 	gulp.src(pathToSass + "/" + name + ".sass")
+		.pipe(plumber({
+			errorHandler: onError
+		}))
 		.pipe(sass({
 			loadPath: process.cwd() + pathToSass,
 			style: "nested",
 			indentedSyntax: true
 		}))
 		.pipe(autoprefixer({
-			browsers: ["last 20 versions", "> 1%"],
+			browsers: ["last 30 versions", "> 1%"],
 			cascade: false
 		}))
 		.pipe(gulp.dest("css"))
