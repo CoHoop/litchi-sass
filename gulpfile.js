@@ -1,24 +1,18 @@
-/*
- * Init Gulp dependencies
- */
-var gulp =
-	require("gulp"),
-	sass = require("gulp-ruby-sass"),
+var gulp = require("gulp"),
+	sass = require("gulp-sass"),
 	minifycss = require("gulp-minify-css"),
 	rename = require("gulp-rename"),
 	autoprefixer = require("gulp-autoprefixer"),
+	uglify = require("gulp-uglify"),
+	concat = require("gulp-concat"),
 	notify = require("gulp-notify");
 
-
-/*
- * Gulp tasks
- */
-gulp.task("common", function() {
-
-	gulp.src("css/_inc/common/common.sass")
+function compileSass (name, pathToSass) {
+	gulp.src(pathToSass + "/" + name + ".sass")
 		.pipe(sass({
-			loadPath: process.cwd() + "/css/_inc/common",
-			style: "nested"
+			loadPath: process.cwd() + pathToSass,
+			style: "nested",
+			indentedSyntax: true
 		}))
 		.pipe(autoprefixer({
 			browsers: ["last 20 versions", "> 1%"],
@@ -28,120 +22,48 @@ gulp.task("common", function() {
 		.pipe(rename({suffix: ".min"}))
 		.pipe(minifycss())
 		.pipe(gulp.dest("css"))
-		.pipe(notify("COMMON successfully compiled!"));
+		.pipe(notify(name + " successfully compiled!"));
+};
 
+gulp.task("alerts", function () {
+	compileSass("alerts", "css/_inc/alerts")
 });
 
-gulp.task("alerts", function() {
-
-	gulp.src("css/_inc/alerts/alerts.sass")
-		.pipe(sass({
-			loadPath: process.cwd() + "/css/_inc/alerts",
-			style: "nested"
-		}))
-		.pipe(autoprefixer({
-			browsers: ["last 20 versions", "> 1%"],
-			cascade: false
-		}))
-		.pipe(gulp.dest("css"))
-		.pipe(rename({suffix: ".min"}))
-		.pipe(minifycss())
-		.pipe(gulp.dest("css"))
-		.pipe(notify("ALERTS successfully compiled!"));
-
+gulp.task("common", function () {
+	compileSass("common", "css/_inc/common")
 });
 
-gulp.task("labels", function() {
-
-	gulp.src("css/_inc/labels/labels.sass")
-		.pipe(sass({
-			loadPath: process.cwd() + "/css/_inc/labels",
-			style: "nested"
-		}))
-		.pipe(autoprefixer({
-			browsers: ["last 20 versions", "> 1%"],
-			cascade: false
-		}))
-		.pipe(gulp.dest("css"))
-		.pipe(rename({suffix: ".min"}))
-		.pipe(minifycss())
-		.pipe(gulp.dest("css"))
-		.pipe(notify("LABELS successfully compiled!"));
-
+gulp.task("drop-downs", function () {
+	compileSass("drop-downs", "css/_inc/drop-downs")
 });
 
-gulp.task("forms", function() {
-
-	gulp.src("css/_inc/forms/forms.sass")
-		.pipe(sass({
-			loadPath: process.cwd() + "/css/_inc/forms",
-			style: "nested"
-		}))
-		.pipe(autoprefixer({
-			browsers: ["last 20 versions", "> 1%"],
-			cascade: false
-		}))
-		.pipe(gulp.dest("css"))
-		.pipe(rename({suffix: ".min"}))
-		.pipe(minifycss())
-		.pipe(gulp.dest("css"))
-		.pipe(notify("FORMS successfully compiled!"));
-
+gulp.task("forms", function () {
+	compileSass("forms", "css/_inc/forms")
 });
 
-gulp.task("drop-downs", function() {
-
-	gulp.src("css/_inc/drop-downs/drop-downs.sass")
-		.pipe(sass({
-			loadPath: process.cwd() + "/css/_inc/drop-downs",
-			style: "nested"
-		}))
-		.pipe(autoprefixer({
-			browsers: ["last 20 versions", "> 1%"],
-			cascade: false
-		}))
-		.pipe(gulp.dest("css"))
-		.pipe(rename({suffix: ".min"}))
-		.pipe(minifycss())
-		.pipe(gulp.dest("css"))
-		.pipe(notify("DROP-DOWNS successfully compiled!"));
-
+gulp.task("labels", function () {
+	compileSass("labels", "css/_inc/labels")
 });
 
-// TODO
-gulp.task("litchi", function() {
-
-	gulp.src("css/_inc/litchi.sass")
-		.pipe(sass({
-			loadPath: process.cwd() + "/css/_inc",
-			style: "nested"
-		}))
-		.pipe(autoprefixer({
-			browsers: ["last 20 versions", "> 1%"],
-			cascade: false
-		}))
-		.pipe(gulp.dest("css"))
-		.pipe(rename({suffix: ".min"}))
-		.pipe(minifycss())
-		.pipe(gulp.dest("css"))
-		.pipe(notify("LITCHI successfully compiled!"));
-
+gulp.task("litchi", function () {
+	compileSass("litchi", "css/_inc")
 });
 
-gulp.task("watch", function() {
+gulp.task("uglify", function () {
+	gulp.src("js/include/*.js")
+		.pipe(concat("app.js"))
+		.pipe(uglify("app.js"))
+		.pipe(gulp.dest("js"))
+		.pipe(notify("JavaScript successfully compiled!"));
+});
 
+gulp.task("default", function () {
 	gulp.watch("css/_inc/common/**/*.sass", ["common"]);
 	gulp.watch("css/_inc/alerts/**/*.sass", ["alerts"]);
 	gulp.watch("css/_inc/labels/**/*.sass", ["labels"]);
 	gulp.watch("css/_inc/forms/**/*.sass", ["forms"]);
 	gulp.watch("css/_inc/drop-downs/**/*.sass", ["drop-downs"]);
+	gulp.watch("css/_inc/**/*.sass", ["litchi"]);
 
-});
-
-
-/*
- * Default Gulp task
- */
-gulp.task("default", function() {
-	gulp.start("watch");
+	gulp.watch("js/include/*.js", ["uglify"]);
 });

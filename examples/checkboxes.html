@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>litchi-sass-forms</title>
+	<link rel="stylesheet" href="../css/litchi.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="../js/app.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var queryString = location.search;
+			var decodedCheckboxValues = decodeURI(queryString).replace(/%2C/g, ",");
+			$("#submittedValue").text(decodedCheckboxValues);
+		});
+	</script>
+</head>
+<body>
+<form method="get">
+	Select your favorite colour:
+	<div class="checkbox-holder">
+		<input name="colourCheckboxes" type="hidden">
+
+		<div class="checkbox selected" data-value="red">
+			<span class="indicator" id="redCheckbox"></span>
+			<label>Red</label>
+		</div>
+
+		<div class="checkbox" data-value="blue">
+			<span class="indicator" id="blueCheckbox"></span>
+			<label>Blue</label>
+		</div>
+
+		<div class="checkbox disabled" data-value="green">
+			<span class="indicator" id="greenCheckbox"></span>
+			<label>Green</label>
+		</div>
+
+		<div class="checkbox disabled selected" data-value="yellow">
+			<span class="indicator" id="yellowCheckbox"></span>
+			<label>Yellow</label>
+		</div>
+	</div>
+	<br/>
+
+	Select a position:
+	<div class="checkbox-holder">
+		<input name="positionCheckboxes" type="hidden">
+
+		<div class="checkbox selected" data-value="first">
+			<span class="indicator" id="firstCheckbox"></span>
+			<label>First</label>
+		</div>
+
+		<div class="checkbox" data-value="second">
+			<span class="indicator" id="secondCheckbox"></span>
+			<label>Second</label>
+		</div>
+
+		<div class="checkbox disabled" data-value="third">
+			<span class="indicator" id="thirdCheckbox"></span>
+			<label>Third</label>
+		</div>
+
+		<div class="checkbox disabled" data-value="fourth">
+			<span class="indicator" id="fourthCheckbox"></span>
+			<label>Fourth</label>
+		</div>
+	</div>
+
+	<button>Submit</button>
+</form>
+
+The radio button value is: <span id="submittedValue"/>
+
+</body>
+</html>
