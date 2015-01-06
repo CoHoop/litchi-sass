@@ -566,7 +566,6 @@ footer {
 
 .alert {
   -webkit-border-radius: 3px;
-  -o-border-radius: 3px;
   border-radius: 3px;
   padding: 1rem;
   background: #F2E03D;
@@ -612,7 +611,6 @@ input, select, textarea, button, .button, .input {
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-border-radius: 4px;
-  -o-border-radius: 4px;
   border-radius: 4px;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -693,7 +691,6 @@ input:invalid, textarea:invalid {
     clear: both; }
   .checkbox-holder .checkbox .indicator, .checkbox-holder .radio-button .indicator, .radio-button-holder .checkbox .indicator, .radio-button-holder .radio-button .indicator {
     -webkit-border-radius: 3px;
-    -o-border-radius: 3px;
     border-radius: 3px;
     -webkit-transition: all 0.25s;
     -moz-transition: all 0.25s;
@@ -710,7 +707,6 @@ input:invalid, textarea:invalid {
     cursor: pointer; }
     .checkbox-holder .checkbox .indicator:after, .checkbox-holder .radio-button .indicator:after, .radio-button-holder .checkbox .indicator:after, .radio-button-holder .radio-button .indicator:after {
       -webkit-border-radius: 2px;
-      -o-border-radius: 2px;
       border-radius: 2px;
       -webkit-transition: background 0.25s;
       -moz-transition: background 0.25s;
@@ -782,11 +778,9 @@ input:invalid, textarea:invalid {
       background: #d1dadd; }
 .checkbox-holder .radio-button .indicator, .radio-button-holder .radio-button .indicator {
   -webkit-border-radius: 100%;
-  -o-border-radius: 100%;
   border-radius: 100%; }
   .checkbox-holder .radio-button .indicator:after, .radio-button-holder .radio-button .indicator:after {
     -webkit-border-radius: 100%;
-    -o-border-radius: 100%;
     border-radius: 100%; }
 
 .flash-message {
@@ -829,7 +823,6 @@ input:invalid, textarea:invalid {
 
 .label {
   -webkit-border-radius: 3px;
-  -o-border-radius: 3px;
   border-radius: 3px;
   padding: 0.25rem 0.5rem;
   border: 1px solid #b4c2c7;
@@ -838,7 +831,6 @@ input:invalid, textarea:invalid {
   font-size: 0.8125rem; }
   .label.numeric {
     -webkit-border-radius: 1.25rem;
-    -o-border-radius: 1.25rem;
     border-radius: 1.25rem;
     padding: 0 0.375rem;
     text-align: center;
