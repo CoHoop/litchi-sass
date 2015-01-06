@@ -54,32 +54,45 @@ In the directory where the project is checked out, execute the following:
 
 		# Install Node.js and Ruby
 		sudo apt-get install nodejs
-		sudo apt-get install ruby
-
-		# Install sass
-		sudo gem install Sass
 
 		# Setup gulp
 		sudo npm install gulp -g
-		sudo npm install gulp
-		sudo npm install gulp-ruby-sass gulp-minify-css gulp-rename gulp-autoprefixer gulp-uglify gulp-concat gulp-notify
+		sudo npm install gulp gulp-sass gulp-minify-css gulp-rename gulp-autoprefixer gulp-plumber gulp-uglify gulp-concat gulp-notify
 
-		# Start gulp monitoring of the sass files
+		# Start gulp monitoring
 		gulp
 
 ### Windows
 
-1. Install Node.js
-2. Install Ruby
-3. In the directory where the project is checked out, execute the following:
-
-		# Install sass
-		gem install Sass
+First, install Node.js. Then in the directory where the project is checked out, execute the following:
 
 		# Setup gulp
 		npm install gulp -g
-		npm install gulp
-		npm install gulp-ruby-sass gulp-minify-css gulp-rename gulp-autoprefixer gulp-uglify gulp-concat gulp-notify
+		npm install gulp gulp-sass gulp-minify-css gulp-rename gulp-autoprefixer gulp-plumber gulp-uglify gulp-concat gulp-notify
 
-		# Start gulp monitoring of the sass files
+		# Start gulp monitoring
 		gulp
+
+## Running tests
+
+### Mac and Linux
+
+In the directory where the project is checked out, execute the following:
+
+		# Setup required packages
+		sudo npm install jasmine-node selenum-webdriver
+
+		# Execute the tests
+		cd examples/
+		jasmine-node *.js
+
+### Windows
+
+In the directory where the project is checked out, execute the following:
+
+		# Setup required packages
+		npm install jasmine-node selenum-webdriver
+
+		# Execute the tests
+		cd examples/
+		jasmine-node *.js

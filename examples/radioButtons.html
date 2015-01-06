@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>litchi-sass-forms</title>
+	<link rel="stylesheet" href="../css/litchi.css">
+	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+	<script src="../js/app.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			var queryString = location.search;
+			$('#submittedValue').text(queryString);
+		});
+	</script>
+</head>
+<body>
+<form method="get">
+	Select your favorite colour:
+	<div class="radio-button-holder">
+		<input name="colourRadioButtons" type="hidden">
+
+		<div class="radio-button selected" data-value="red">
+			<span class="indicator" id="redRadioButton"></span>
+			<label>Red</label>
+		</div>
+
+		<div class="radio-button" data-value="blue">
+			<span class="indicator" id="blueRadioButton"></span>
+			<label>Blue</label>
+		</div>
+
+		<div class="radio-button disabled" data-value="green">
+			<span class="indicator" id="greenRadioButton"></span>
+			<label>Green</label>
+		</div>
+	</div>
+	<br/>
+
+	Select a position:
+	<div class="radio-button-holder">
+		<input name="positionRadioButtons" type="hidden">
+
+		<div class="radio-button" data-value="first">
+			<span class="indicator" id="firstRadioButton"></span>
+			<label>First</label>
+		</div>
+
+		<div class="radio-button selected" data-value="second">
+			<span class="indicator" id="secondRadioButton"></span>
+			<label>Second</label>
+		</div>
+
+		<div class="radio-button disabled" data-value="third">
+			<span class="indicator" id="thirdRadioButton"></span>
+			<label>Third</label>
+		</div>
+	</div>
+
+	<button>Submit</button>
+</form>
+
+The submitted query string was: <span id="submittedValue"/>
+
+</body>
+</html>
