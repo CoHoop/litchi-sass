@@ -57,7 +57,7 @@ In the directory where the project is checked out, execute the following:
 
 		# Setup gulp
 		sudo npm install gulp -g
-		sudo npm install gulp gulp-sass gulp-minify-css gulp-rename gulp-autoprefixer gulp-plumber gulp-uglify gulp-concat gulp-notify
+		sudo npm install
 
 		# Start gulp monitoring
 		gulp
@@ -68,7 +68,7 @@ First, install Node.js. Then in the directory where the project is checked out, 
 
 		# Setup gulp
 		npm install gulp -g
-		npm install gulp gulp-sass gulp-minify-css gulp-rename gulp-autoprefixer gulp-plumber gulp-uglify gulp-concat gulp-notify
+		npm install
 
 		# Start gulp monitoring
 		gulp
@@ -80,7 +80,7 @@ First, install Node.js. Then in the directory where the project is checked out, 
 In the directory where the project is checked out, execute the following:
 
 		# Setup required packages
-		sudo npm install jasmine-node selenum-webdriver
+		sudo npm install jasmine-node selenium-webdriver
 
 		# Execute the tests
 		cd examples/
@@ -91,7 +91,7 @@ In the directory where the project is checked out, execute the following:
 In the directory where the project is checked out, execute the following:
 
 		# Setup required packages
-		npm install jasmine-node selenum-webdriver
+		npm install jasmine-node selenium-webdriver
 
 		# Execute the tests
 		cd examples/
