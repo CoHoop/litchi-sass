@@ -1,5 +1,5 @@
-var firefox = require('selenium-webdriver/firefox'),
-	by = require('selenium-webdriver').By,
+var webDriver = require('selenium-webdriver'),
+	firefox = require('selenium-webdriver/Firefox'),
 	path = require('path');
 
 describe('radio buttons', function () {
@@ -11,27 +11,39 @@ describe('radio buttons', function () {
 		};
 
 		this.selectRed = function () {
-			driver.findElement(by.id('redRadioButton')).click();
+			driver.findElement(webDriver.By.id('redRadioButton')).click();
 		};
 
 		this.selectBlue = function () {
-			driver.findElement(by.id('blueRadioButton')).click();
+			driver.findElement(webDriver.By.id('blueRadioButton')).click();
 		};
 
 		this.selectGreen = function () {
-			driver.findElement(by.id('greenRadioButton')).click();
+			driver.findElement(webDriver.By.id('greenRadioButton')).click();
 		};
 
 		this.selectFirst = function () {
-			driver.findElement(by.id('firstRadioButton')).click();
+			driver.findElement(webDriver.By.id('firstRadioButton')).click();
+		};
+
+		this.pressTab = function () {
+			driver.switchTo().activeElement().sendKeys(webDriver.Key.TAB);
+		};
+
+		this.pressSpace = function () {
+			driver.switchTo().activeElement().sendKeys(webDriver.Key.SPACE);
+		};
+
+		this.pressEnter = function () {
+			driver.switchTo().activeElement().sendKeys(webDriver.Key.ENTER);
 		};
 
 		this.submit = function () {
-			driver.findElement(by.tagName('button')).click();
+			driver.findElement(webDriver.By.tagName('button')).click();
 		};
 
 		this.getSubmittedValues = function () {
-			return driver.findElement(by.id('submittedValue')).getText();
+			return driver.findElement(webDriver.By.id('submittedValue')).getText();
 		};
 	};
 	var radioButtonPage;
@@ -88,6 +100,17 @@ describe('radio buttons', function () {
 		radioButtonPage.submit();
 		radioButtonPage.getSubmittedValues().then(function (text) {
 			expect(text).toBe('?colourRadioButtons=red&positionRadioButtons=first');
+			done();
+		});
+	});
+
+	it('should be usable with just the keyboard', function (done) {
+		radioButtonPage.pressTab();
+		radioButtonPage.pressTab();
+		radioButtonPage.pressSpace();
+		radioButtonPage.pressEnter();
+		radioButtonPage.getSubmittedValues().then(function (text) {
+			expect(text).toBe('?colourRadioButtons=blue&positionRadioButtons=second');
 			done();
 		});
 	});
