@@ -541,7 +541,9 @@ footer {
   .alert .close {
     color: #d4c10e;
     top: 1rem;
-    right: 1rem; }
+    right: 1rem;
+    text-decoration: none;
+    float: right; }
     .alert .close:hover, .alert .close:focus {
       color: #bcab0d; }
   .alert.info {
