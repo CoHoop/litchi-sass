@@ -61,7 +61,7 @@ describe('radio buttons', function () {
 	it('should have the default value if no changes are made', function (done) {
 		radioButtonPage.submit();
 		radioButtonPage.getSubmittedValues().then(function (text) {
-			expect(text).toBe('?colourRadioButtons=red&positionRadioButtons=second');
+			expect(text).toBe('?name=Dean&colourRadioButtons=red&positionRadioButtons=second');
 			done();
 		});
 	});
@@ -72,7 +72,7 @@ describe('radio buttons', function () {
 		radioButtonPage.selectBlue();
 		radioButtonPage.submit();
 		radioButtonPage.getSubmittedValues().then(function (text) {
-			expect(text).toBe('?colourRadioButtons=blue&positionRadioButtons=second');
+			expect(text).toBe('?name=Dean&colourRadioButtons=blue&positionRadioButtons=second');
 			done();
 		});
 	});
@@ -81,7 +81,7 @@ describe('radio buttons', function () {
 		radioButtonPage.selectRed();
 		radioButtonPage.submit();
 		radioButtonPage.getSubmittedValues().then(function (text) {
-			expect(text).toBe('?colourRadioButtons=red&positionRadioButtons=second');
+			expect(text).toBe('?name=Dean&colourRadioButtons=red&positionRadioButtons=second');
 			done();
 		});
 	});
@@ -90,7 +90,7 @@ describe('radio buttons', function () {
 		radioButtonPage.selectGreen();
 		radioButtonPage.submit();
 		radioButtonPage.getSubmittedValues().then(function (text) {
-			expect(text).toBe('?colourRadioButtons=red&positionRadioButtons=second');
+			expect(text).toBe('?name=Dean&colourRadioButtons=red&positionRadioButtons=second');
 			done();
 		});
 	});
@@ -99,7 +99,7 @@ describe('radio buttons', function () {
 		radioButtonPage.selectFirst();
 		radioButtonPage.submit();
 		radioButtonPage.getSubmittedValues().then(function (text) {
-			expect(text).toBe('?colourRadioButtons=red&positionRadioButtons=first');
+			expect(text).toBe('?name=Dean&colourRadioButtons=red&positionRadioButtons=first');
 			done();
 		});
 	});
@@ -107,10 +107,11 @@ describe('radio buttons', function () {
 	it('should be usable with just the keyboard', function (done) {
 		radioButtonPage.pressTab();
 		radioButtonPage.pressTab();
+		radioButtonPage.pressTab();
 		radioButtonPage.pressSpace();
 		radioButtonPage.pressEnter();
 		radioButtonPage.getSubmittedValues().then(function (text) {
-			expect(text).toBe('?colourRadioButtons=blue&positionRadioButtons=second');
+			expect(text).toBe('?name=Dean&colourRadioButtons=blue&positionRadioButtons=second');
 			done();
 		});
 	});

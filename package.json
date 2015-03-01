@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/litchi-framework/litchi-sass"
+    "url": "https://github.com/litchi-io/litchi-sass"
   },
   "dependencies": {
     "gulp": "3.8.10",

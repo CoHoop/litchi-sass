@@ -69,7 +69,7 @@ describe('checkboxes', function () {
 	it('should have the default value if no changes are made', function (done) {
 		checkboxesPage.submit();
 		checkboxesPage.getSubmittedValues().then(function (text) {
-			expect(text).toBe('?colourCheckboxes=["red","yellow"]&positionCheckboxes=["first"]');
+			expect(text).toBe('?name=Dean&colourCheckboxes=["red","yellow"]&positionCheckboxes=["first"]');
 			done();
 		});
 	});
@@ -79,7 +79,7 @@ describe('checkboxes', function () {
 		checkboxesPage.selectBlue();
 		checkboxesPage.submit();
 		checkboxesPage.getSubmittedValues().then(function (text) {
-			expect(text).toBe('?colourCheckboxes=["blue","yellow"]&positionCheckboxes=["first"]');
+			expect(text).toBe('?name=Dean&colourCheckboxes=["blue","yellow"]&positionCheckboxes=["first"]');
 			done();
 		});
 	});
@@ -89,7 +89,7 @@ describe('checkboxes', function () {
 		checkboxesPage.selectYellow();
 		checkboxesPage.submit();
 		checkboxesPage.getSubmittedValues().then(function (text) {
-			expect(text).toBe('?colourCheckboxes=["red","yellow"]&positionCheckboxes=["first"]');
+			expect(text).toBe('?name=Dean&colourCheckboxes=["red","yellow"]&positionCheckboxes=["first"]');
 			done();
 		});
 	});
@@ -98,7 +98,7 @@ describe('checkboxes', function () {
 		checkboxesPage.selectFirst();
 		checkboxesPage.submit();
 		checkboxesPage.getSubmittedValues().then(function (text) {
-			expect(text).toBe('?colourCheckboxes=["red","yellow"]&positionCheckboxes=[]');
+			expect(text).toBe('?name=Dean&colourCheckboxes=["red","yellow"]&positionCheckboxes=[]');
 			done();
 		});
 	});
@@ -107,19 +107,20 @@ describe('checkboxes', function () {
 		checkboxesPage.selectSecond();
 		checkboxesPage.submit();
 		checkboxesPage.getSubmittedValues().then(function (text) {
-			expect(text).toBe('?colourCheckboxes=["red","yellow"]&positionCheckboxes=["first","second"]');
+			expect(text).toBe('?name=Dean&colourCheckboxes=["red","yellow"]&positionCheckboxes=["first","second"]');
 			done();
 		});
 	});
 
 	it('should be usable with just the keyboard', function (done) {
 		checkboxesPage.pressTab();
+		checkboxesPage.pressTab();
 		checkboxesPage.pressSpace();
 		checkboxesPage.pressTab();
 		checkboxesPage.pressSpace();
 		checkboxesPage.pressEnter();
 		checkboxesPage.getSubmittedValues().then(function (text) {
-			expect(text).toBe('?colourCheckboxes=["blue","yellow"]&positionCheckboxes=["first"]');
+			expect(text).toBe('?name=Dean&colourCheckboxes=["blue","yellow"]&positionCheckboxes=["first"]');
 			done();
 		});
 	});

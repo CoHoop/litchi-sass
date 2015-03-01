@@ -96,15 +96,7 @@ input:invalid, textarea:invalid {
 .checkbox-holder input, .radio-button-holder input {
   display: none; }
 .checkbox-holder .checkbox, .checkbox-holder .radio-button, .radio-button-holder .checkbox, .radio-button-holder .radio-button {
-  zoom: 1;
-  height: 1.5rem;
-  position: relative;
-  cursor: pointer; }
-  .checkbox-holder .checkbox:before, .checkbox-holder .checkbox:after, .checkbox-holder .radio-button:before, .checkbox-holder .radio-button:after, .radio-button-holder .checkbox:before, .radio-button-holder .checkbox:after, .radio-button-holder .radio-button:before, .radio-button-holder .radio-button:after {
-    content: "";
-    display: table; }
-  .checkbox-holder .checkbox:after, .checkbox-holder .radio-button:after, .radio-button-holder .checkbox:after, .radio-button-holder .radio-button:after {
-    clear: both; }
+  height: 1.5rem; }
   .checkbox-holder .checkbox .indicator, .checkbox-holder .radio-button .indicator, .radio-button-holder .checkbox .indicator, .radio-button-holder .radio-button .indicator {
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -116,10 +108,7 @@ input:invalid, textarea:invalid {
     width: 0.875rem;
     height: 0.875rem;
     display: block;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    margin: -0.4375rem 0 0;
+    position: relative;
     cursor: pointer; }
     .checkbox-holder .checkbox .indicator:after, .checkbox-holder .radio-button .indicator:after, .radio-button-holder .checkbox .indicator:after, .radio-button-holder .radio-button .indicator:after {
       -webkit-border-radius: 2px;
@@ -140,9 +129,7 @@ input:invalid, textarea:invalid {
       margin-top: -0.25rem;
       margin-left: -0.25rem; }
   .checkbox-holder .checkbox label, .checkbox-holder .radio-button label, .radio-button-holder .checkbox label, .radio-button-holder .radio-button label {
-    padding: 0 0 0 1.5rem;
-    height: 1.5rem;
-    line-height: 1.5rem;
+    padding: 0 0 0 0.5rem;
     font-size: 0.875rem;
     cursor: pointer; }
   .checkbox-holder .checkbox:hover .indicator, .checkbox-holder .checkbox:focus .indicator, .checkbox-holder .radio-button:hover .indicator, .checkbox-holder .radio-button:focus .indicator, .radio-button-holder .checkbox:hover .indicator, .radio-button-holder .checkbox:focus .indicator, .radio-button-holder .radio-button:hover .indicator, .radio-button-holder .radio-button:focus .indicator {

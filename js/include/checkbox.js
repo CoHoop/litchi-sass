@@ -45,9 +45,7 @@ function toggleCheckBox(checkBoxElement) {
 }
 
 function setupCheckboxTabbing() {
-	var currentTabIndex = 1;
 	$(".checkbox:not(.disabled)").each(function () {
-		$(this).attr("tabIndex", currentTabIndex);
-		currentTabIndex++;
+		$(this).attr("tabIndex", 0);
 	});
 }

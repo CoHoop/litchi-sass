@@ -43,9 +43,7 @@ function toggleRadioButton(radioButtonElement) {
 }
 
 function setupRadioButtonTabbing() {
-	var currentTabIndex = 1;
 	$(".radio-button:not(.disabled)").each(function () {
-		$(this).attr("tabIndex", currentTabIndex);
-		currentTabIndex++;
+		$(this).attr("tabIndex", 0);
 	});
 }
