@@ -367,6 +367,15 @@ h1, h2, h3, h4, h5, h6 {
     -moz-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+  @media all and (max-width: 500px) {
+    .flex {
+      display: block; }
+      .flex > .flex-1 {
+        -webkit-box-flex: initial;
+        -webkit-flex: initial;
+        -moz-box-flex: initial;
+        -ms-flex: initial;
+        flex: initial; } }
 
 .flex-1 {
   -webkit-box-flex: 1;

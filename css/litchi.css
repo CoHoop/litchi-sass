@@ -367,6 +367,15 @@ h1, h2, h3, h4, h5, h6 {
     -moz-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
+  @media all and (max-width: 500px) {
+    .flex, .checkbox-holder .checkbox, .checkbox-holder .radio-button, .radio-button-holder .checkbox, .radio-button-holder .radio-button {
+      display: block; }
+      .flex > .flex-1, .checkbox-holder .checkbox > .flex-1, .checkbox-holder .radio-button > .flex-1, .radio-button-holder .checkbox > .flex-1, .radio-button-holder .radio-button > .flex-1 {
+        -webkit-box-flex: initial;
+        -webkit-flex: initial;
+        -moz-box-flex: initial;
+        -ms-flex: initial;
+        flex: initial; } }
 
 .flex-1 {
   -webkit-box-flex: 1;
