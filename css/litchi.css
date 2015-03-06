@@ -769,6 +769,9 @@ input:invalid, textarea:invalid {
       box-shadow: none;
       border-color: #eef1f3;
       color: #d1dadd; }
+  .button.primary, button.primary {
+    border-color: #FF6961;
+    color: #FF6961; }
 
 .label {
   -webkit-border-radius: 3px;
