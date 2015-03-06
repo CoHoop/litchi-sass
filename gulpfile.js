@@ -43,10 +43,6 @@ gulp.task("common", function () {
 	compileSass("common", "css/_inc/common")
 });
 
-gulp.task("drop-downs", function () {
-	compileSass("drop-downs", "css/_inc/drop-downs")
-});
-
 gulp.task("forms", function () {
 	compileSass("forms", "css/_inc/forms")
 });
@@ -70,7 +66,6 @@ gulp.task("uglify", function () {
 gulp.task("default", function () {
 	gulp.watch("css/_inc/alerts/**/*.sass", ["alerts"]);
 	gulp.watch("css/_inc/common/**/*.sass", ["common"]);
-	gulp.watch("css/_inc/drop-downs/**/*.sass", ["drop-downs"]);
 	gulp.watch("css/_inc/forms/**/*.sass", ["forms"]);
 	gulp.watch("css/_inc/labels/**/*.sass", ["labels"]);
 	gulp.watch("css/_inc/**/*.sass", ["litchi"]);
