@@ -79,13 +79,13 @@ a, .link {
   a:hover, a:focus, .link:hover, .link:focus {
     text-decoration: none; }
   a.link-blue, .link.link-blue {
-    color: #2196F3; }
+    color: #81CFE0; }
   a.link-green, .link.link-green {
     color: #CDDC39; }
   a.link-red, .link.link-red {
     color: #F25641; }
   a.link-yellow, .link.link-yellow {
-    color: #FFC107; }
+    color: #FDD835; }
 
 ul, ol {
   line-height: 1.5;

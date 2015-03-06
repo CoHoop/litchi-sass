@@ -1,3 +1,109 @@
+.wipe-margin, .no-margin {
+  margin: 0; }
+
+.wipe-padding, .no-padding {
+  padding: 0; }
+
+.wipe-margin-padding, .file-button input[type="file"], .no-margin-padding, .wipe-padding-margin, .no-padding-margin {
+  margin: 0;
+  padding: 0; }
+
+.padding-top-quarter {
+  padding-top: 0.25rem; }
+
+.padding-top-half {
+  padding-top: 0.5rem; }
+
+.padding-top-base {
+  padding-top: 1rem; }
+
+.padding-top-double {
+  padding-top: 2rem; }
+
+.padding-right-quarter {
+  padding-right: 0.25rem; }
+
+.padding-right-half {
+  padding-right: 0.5rem; }
+
+.padding-right-base {
+  padding-right: 1rem; }
+
+.padding-right-double {
+  padding-right: 2rem; }
+
+.padding-bottom-quarter {
+  padding-bottom: 0.25rem; }
+
+.padding-bottom-half {
+  padding-bottom: 0.5rem; }
+
+.padding-bottom-base {
+  padding-bottom: 1rem; }
+
+.padding-bottom-double {
+  padding-bottom: 2rem; }
+
+.padding-left-quarter {
+  padding-left: 0.25rem; }
+
+.padding-left-half {
+  padding-left: 0.5rem; }
+
+.padding-left-base {
+  padding-left: 1rem; }
+
+.padding-left-double {
+  padding-left: 2rem; }
+
+.margin-top-quarter {
+  margin-top: 0.25rem; }
+
+.margin-top-half {
+  margin-top: 0.5rem; }
+
+.margin-top-base {
+  margin-top: 1rem; }
+
+.margin-top-double {
+  margin-top: 2rem; }
+
+.margin-right-quarter {
+  margin-right: 0.25rem; }
+
+.margin-right-half {
+  margin-right: 0.5rem; }
+
+.margin-right-base {
+  margin-right: 1rem; }
+
+.margin-right-double {
+  margin-right: 2rem; }
+
+.margin-bottom-quarter {
+  margin-bottom: 0.25rem; }
+
+.margin-bottom-half {
+  margin-bottom: 0.5rem; }
+
+.margin-bottom-base {
+  margin-bottom: 1rem; }
+
+.margin-bottom-double {
+  margin-bottom: 2rem; }
+
+.margin-left-quarter {
+  margin-left: 0.25rem; }
+
+.margin-left-half {
+  margin-left: 0.5rem; }
+
+.margin-left-base {
+  margin-left: 1rem; }
+
+.margin-left-double {
+  margin-left: 2rem; }
+
 .text-center {
   text-align: center; }
 
@@ -146,13 +252,13 @@ input:invalid, textarea:invalid {
     border-color: #b4c2c7; }
     .checkbox-holder .checkbox.selected .indicator:after, .checkbox-holder .radio-button.selected .indicator:after, .radio-button-holder .checkbox.selected .indicator:after, .radio-button-holder .radio-button.selected .indicator:after {
       opacity: 1;
-      background: #6699CC; }
+      background: #81CFE0; }
   .checkbox-holder .checkbox.selected:hover .indicator, .checkbox-holder .checkbox.selected:focus .indicator, .checkbox-holder .radio-button.selected:hover .indicator, .checkbox-holder .radio-button.selected:focus .indicator, .radio-button-holder .checkbox.selected:hover .indicator, .radio-button-holder .checkbox.selected:focus .indicator, .radio-button-holder .radio-button.selected:hover .indicator, .radio-button-holder .radio-button.selected:focus .indicator {
-    border-color: #6699CC; }
+    border-color: #81CFE0; }
   .checkbox-holder .checkbox.selected:focus .indicator, .checkbox-holder .checkbox.selected:active .indicator, .checkbox-holder .radio-button.selected:focus .indicator, .checkbox-holder .radio-button.selected:active .indicator, .radio-button-holder .checkbox.selected:focus .indicator, .radio-button-holder .checkbox.selected:active .indicator, .radio-button-holder .radio-button.selected:focus .indicator, .radio-button-holder .radio-button.selected:active .indicator {
-    border-color: #4d88c4; }
+    border-color: shade(#81CFE0, 10%); }
     .checkbox-holder .checkbox.selected:focus .indicator:after, .checkbox-holder .checkbox.selected:active .indicator:after, .checkbox-holder .radio-button.selected:focus .indicator:after, .checkbox-holder .radio-button.selected:active .indicator:after, .radio-button-holder .checkbox.selected:focus .indicator:after, .radio-button-holder .checkbox.selected:active .indicator:after, .radio-button-holder .radio-button.selected:focus .indicator:after, .radio-button-holder .radio-button.selected:active .indicator:after {
-      background: #4d88c4; }
+      background: shade(#81CFE0, 10%); }
   .checkbox-holder .checkbox.selected.disabled .indicator, .checkbox-holder .radio-button.selected.disabled .indicator, .radio-button-holder .checkbox.selected.disabled .indicator, .radio-button-holder .radio-button.selected.disabled .indicator {
     border-color: #eef1f3; }
   .checkbox-holder .checkbox.disabled, .checkbox-holder .radio-button.disabled, .radio-button-holder .checkbox.disabled, .radio-button-holder .radio-button.disabled {
@@ -225,14 +331,14 @@ input:invalid, textarea:invalid {
     border-color: #FF6961;
     color: #FF6961; }
   .button.blue, button.blue {
-    border-color: #6699CC;
-    color: #6699CC; }
+    border-color: #81CFE0;
+    color: #81CFE0; }
   .button.red, button.red {
-    border-color: #F44336;
-    color: #F44336; }
+    border-color: #F25641;
+    color: #F25641; }
   .button.green, button.green {
-    border-color: #8BC34A;
-    color: #8BC34A; }
+    border-color: #CDDC39;
+    color: #CDDC39; }
   .button.yellow, button.yellow {
-    border-color: #FFC107;
-    color: #FFC107; }
+    border-color: #FDD835;
+    color: #FDD835; }
