@@ -82,6 +82,10 @@ ul, ol {
     margin: 0; }
   ul:last-child, ol:last-child {
     margin-bottom: 0; }
+  ul.unstyled, ol.unstyled {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; }
 
 dl {
   line-height: 1.5; }
@@ -106,7 +110,7 @@ table {
     background: #f8f9fa; }
 
 p, h1, h2, h3, h4, h5, h6 {
-  line-height: 1.5; }
+  line-height: 1.6; }
 
 p {
   margin: 1rem 0; }
@@ -116,10 +120,12 @@ p {
     margin-top: 0; }
 
 h1, h2, h3 {
-  margin: 2rem 0 1rem; }
+  margin: 2rem 0 1rem;
+  font-weight: 500; }
 
 h4, h5, h6 {
-  margin: 1rem 0 0.5rem; }
+  margin: 1rem 0 0.5rem;
+  font-weight: 500; }
 
 h1 {
   font-size: 2.375rem; }
