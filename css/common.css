@@ -140,7 +140,7 @@ h6 {
   font-size: 1.25rem; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Georgia, Helvetica, Arial, sans-serif; }
+  font-family: "Roboto", Helvetica, Arial, sans-serif; }
   h1:first-of-type, h2:first-of-type, h3:first-of-type, h4:first-of-type, h5:first-of-type, h6:first-of-type {
     margin-top: 0; }
   h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child {
@@ -467,7 +467,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
 
-.block-center, .container-full-screen, .container-narrow, .page-documentation .container-narrow header .logo {
+.block-center, .container-full-screen, .container-narrow {
   margin-left: auto;
   margin-right: auto; }
 
@@ -525,105 +525,3 @@ footer {
   font-size: 0.75rem;
   text-align: center;
   padding: 3rem 1rem; }
-
-.page-documentation .container-narrow header {
-  padding: 8rem 0; }
-  .page-documentation .container-narrow header .logo {
-    width: 12rem;
-    height: 6rem;
-    -o-background-size: 60px;
-    background-size: 60px;
-    display: block; }
-.page-documentation .container-narrow section {
-  padding: 0 0 2rem; }
-  .page-documentation .container-narrow section .section-headline {
-    font-size: 1.875rem;
-    border-bottom: 1px solid #eef1f3;
-    color: #52676e; }
-.page-documentation .container-narrow article {
-  zoom: 1;
-  position: relative;
-  margin: 3rem 0; }
-  .page-documentation .container-narrow article:before, .page-documentation .container-narrow article:after {
-    content: "";
-    display: table; }
-  .page-documentation .container-narrow article:after {
-    clear: both; }
-  .page-documentation .container-narrow article aside {
-    zoom: 1;
-    float: left;
-    width: 70%; }
-    .page-documentation .container-narrow article aside:before, .page-documentation .container-narrow article aside:after {
-      content: "";
-      display: table; }
-    .page-documentation .container-narrow article aside:after {
-      clear: both; }
-    .page-documentation .container-narrow article aside:first-of-type {
-      width: 30%;
-      min-height: 1rem; }
-      .page-documentation .container-narrow article aside:first-of-type p {
-        max-width: 26%;
-        overflow: hidden;
-        -o-text-overflow: ellipsis;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        margin: 0;
-        color: #b4c2c7;
-        font-size: 0.875rem;
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        height: 1rem;
-        line-height: 1rem;
-        margin-top: -0.5rem; }
-    .page-documentation .container-narrow article aside .color {
-      width: 100%;
-      height: 3rem;
-      line-height: 3rem;
-      margin: 0 0 1rem;
-      position: relative;
-      text-indent: 1rem;
-      color: white;
-      font-size: 0.75rem;
-      font-weight: 400; }
-      .page-documentation .container-narrow article aside .color.grey {
-        width: 50%;
-        float: left; }
-      .page-documentation .container-narrow article aside .color.grey-50 {
-        background: #f8f9fa;
-        color: #839ba3; }
-      .page-documentation .container-narrow article aside .color.grey-100 {
-        background: #eef1f3;
-        color: #839ba3; }
-      .page-documentation .container-narrow article aside .color.grey-200 {
-        background: #d1dadd; }
-      .page-documentation .container-narrow article aside .color.grey-300 {
-        background: #b4c2c7; }
-      .page-documentation .container-narrow article aside .color.grey-400 {
-        background: #a0b3b9; }
-      .page-documentation .container-narrow article aside .color.grey-500 {
-        background: #839ba3; }
-      .page-documentation .container-narrow article aside .color.grey-600 {
-        background: #68838c; }
-      .page-documentation .container-narrow article aside .color.grey-700 {
-        background: #52676e; }
-      .page-documentation .container-narrow article aside .color.grey-800 {
-        background: #354347; }
-      .page-documentation .container-narrow article aside .color.grey-900 {
-        background: #181e20; }
-      .page-documentation .container-narrow article aside .color .light, .page-documentation .container-narrow article aside .color .lighter, .page-documentation .container-narrow article aside .color .dark, .page-documentation .container-narrow article aside .color .darker {
-        position: absolute;
-        width: 25%;
-        height: 3rem;
-        line-height: 3.0625rem;
-        bottom: 0;
-        left: 25%;
-        font-weight: 400;
-        font-size: 0.625rem; }
-        .page-documentation .container-narrow article aside .color .light.lighter, .page-documentation .container-narrow article aside .color .lighter.lighter, .page-documentation .container-narrow article aside .color .dark.lighter, .page-documentation .container-narrow article aside .color .darker.lighter {
-          left: 0%; }
-        .page-documentation .container-narrow article aside .color .light.dark, .page-documentation .container-narrow article aside .color .lighter.dark, .page-documentation .container-narrow article aside .color .dark.dark, .page-documentation .container-narrow article aside .color .darker.dark {
-          left: 50%; }
-        .page-documentation .container-narrow article aside .color .light.darker, .page-documentation .container-narrow article aside .color .lighter.darker, .page-documentation .container-narrow article aside .color .dark.darker, .page-documentation .container-narrow article aside .color .darker.darker {
-          left: 75%; }
