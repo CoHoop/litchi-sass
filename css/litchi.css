@@ -465,7 +465,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
 
-.block-center, .container-full-screen, .container-narrow, .page-documentation .container-narrow header .logo {
+.block-center, .container-full-screen, .container-narrow, .container-narrow.documentation header .logo {
   margin-left: auto;
   margin-right: auto; }
 
@@ -931,36 +931,36 @@ footer {
   text-align: center;
   padding: 3rem 1rem; }
 
-.page-documentation .container-narrow header {
+.container-narrow.documentation header {
   padding: 8rem 0; }
-  .page-documentation .container-narrow header .logo {
+  .container-narrow.documentation header .logo {
     width: 12rem;
     height: 6rem;
     background: url("../images//logo/logo-03.svg") no-repeat center center;
     background-size: contain;
     display: block; }
-.page-documentation .container-narrow section {
+.container-narrow.documentation section {
   padding: 0 0 2rem; }
-  .page-documentation .container-narrow section .section-headline {
+  .container-narrow.documentation section .section-headline {
     font-size: 1.875rem;
     border-bottom: 1px solid #eef1f3;
     color: #52676e; }
-.page-documentation .container-narrow article {
+.container-narrow.documentation article {
   zoom: 1;
   position: relative;
   margin: 3rem 0; }
-  .page-documentation .container-narrow article:before, .page-documentation .container-narrow article:after {
+  .container-narrow.documentation article:before, .container-narrow.documentation article:after {
     content: "";
     display: table; }
-  .page-documentation .container-narrow article:after {
+  .container-narrow.documentation article:after {
     clear: both; }
-  .page-documentation .container-narrow article aside {
+  .container-narrow.documentation article aside {
     float: left;
     width: 70%; }
-    .page-documentation .container-narrow article aside:first-of-type {
+    .container-narrow.documentation article aside:first-of-type {
       width: 30%;
       min-height: 1rem; }
-      .page-documentation .container-narrow article aside:first-of-type p {
+      .container-narrow.documentation article aside:first-of-type p {
         max-width: 26%;
         overflow: hidden;
         -o-text-overflow: ellipsis;
@@ -976,7 +976,7 @@ footer {
         height: 1rem;
         line-height: 1rem;
         margin-top: -0.5rem; }
-    .page-documentation .container-narrow article aside .color {
+    .container-narrow.documentation article aside .color {
       width: 100%;
       height: 3rem;
       line-height: 3rem;
@@ -986,44 +986,44 @@ footer {
       color: white;
       font-size: 0.75rem;
       font-weight: 400; }
-      .page-documentation .container-narrow article aside .color.red {
+      .container-narrow.documentation article aside .color.red {
         background: #FF4040; }
-      .page-documentation .container-narrow article aside .color.blue {
+      .container-narrow.documentation article aside .color.blue {
         background: #81CFE0; }
-      .page-documentation .container-narrow article aside .color.alert-warning {
+      .container-narrow.documentation article aside .color.alert-warning {
         background: #FDD835; }
-      .page-documentation .container-narrow article aside .color.alert-info {
+      .container-narrow.documentation article aside .color.alert-info {
         background: #81CFE0; }
-      .page-documentation .container-narrow article aside .color.alert-success {
+      .container-narrow.documentation article aside .color.alert-success {
         background: #CDDC39; }
-      .page-documentation .container-narrow article aside .color.alert-error {
+      .container-narrow.documentation article aside .color.alert-error {
         background: #F25641; }
-      .page-documentation .container-narrow article aside .color.grey {
+      .container-narrow.documentation article aside .color.grey {
         width: 50%;
         float: left; }
-      .page-documentation .container-narrow article aside .color.grey-50 {
+      .container-narrow.documentation article aside .color.grey-50 {
         background: #f8f9fa;
         color: #839ba3; }
-      .page-documentation .container-narrow article aside .color.grey-100 {
+      .container-narrow.documentation article aside .color.grey-100 {
         background: #eef1f3;
         color: #839ba3; }
-      .page-documentation .container-narrow article aside .color.grey-200 {
+      .container-narrow.documentation article aside .color.grey-200 {
         background: #d1dadd; }
-      .page-documentation .container-narrow article aside .color.grey-300 {
+      .container-narrow.documentation article aside .color.grey-300 {
         background: #b4c2c7; }
-      .page-documentation .container-narrow article aside .color.grey-400 {
+      .container-narrow.documentation article aside .color.grey-400 {
         background: #a0b3b9; }
-      .page-documentation .container-narrow article aside .color.grey-500 {
+      .container-narrow.documentation article aside .color.grey-500 {
         background: #839ba3; }
-      .page-documentation .container-narrow article aside .color.grey-600 {
+      .container-narrow.documentation article aside .color.grey-600 {
         background: #68838c; }
-      .page-documentation .container-narrow article aside .color.grey-700 {
+      .container-narrow.documentation article aside .color.grey-700 {
         background: #52676e; }
-      .page-documentation .container-narrow article aside .color.grey-800 {
+      .container-narrow.documentation article aside .color.grey-800 {
         background: #354347; }
-      .page-documentation .container-narrow article aside .color.grey-900 {
+      .container-narrow.documentation article aside .color.grey-900 {
         background: #181e20; }
-      .page-documentation .container-narrow article aside .color .light, .page-documentation .container-narrow article aside .color .lighter, .page-documentation .container-narrow article aside .color .dark, .page-documentation .container-narrow article aside .color .darker {
+      .container-narrow.documentation article aside .color .light, .container-narrow.documentation article aside .color .lighter, .container-narrow.documentation article aside .color .dark, .container-narrow.documentation article aside .color .darker {
         position: absolute;
         width: 25%;
         height: 3rem;
@@ -1032,53 +1032,53 @@ footer {
         left: 25%;
         font-weight: 400;
         font-size: 0.625rem; }
-        .page-documentation .container-narrow article aside .color .light.lighter, .page-documentation .container-narrow article aside .color .lighter.lighter, .page-documentation .container-narrow article aside .color .dark.lighter, .page-documentation .container-narrow article aside .color .darker.lighter {
+        .container-narrow.documentation article aside .color .light.lighter, .container-narrow.documentation article aside .color .lighter.lighter, .container-narrow.documentation article aside .color .dark.lighter, .container-narrow.documentation article aside .color .darker.lighter {
           left: 0%; }
-        .page-documentation .container-narrow article aside .color .light.dark, .page-documentation .container-narrow article aside .color .lighter.dark, .page-documentation .container-narrow article aside .color .dark.dark, .page-documentation .container-narrow article aside .color .darker.dark {
+        .container-narrow.documentation article aside .color .light.dark, .container-narrow.documentation article aside .color .lighter.dark, .container-narrow.documentation article aside .color .dark.dark, .container-narrow.documentation article aside .color .darker.dark {
           left: 50%; }
-        .page-documentation .container-narrow article aside .color .light.darker, .page-documentation .container-narrow article aside .color .lighter.darker, .page-documentation .container-narrow article aside .color .dark.darker, .page-documentation .container-narrow article aside .color .darker.darker {
+        .container-narrow.documentation article aside .color .light.darker, .container-narrow.documentation article aside .color .lighter.darker, .container-narrow.documentation article aside .color .dark.darker, .container-narrow.documentation article aside .color .darker.darker {
           left: 75%; }
-      .page-documentation .container-narrow article aside .color.color-blue {
+      .container-narrow.documentation article aside .color.color-blue {
         background: #81CFE0;
         height: 8rem; }
-        .page-documentation .container-narrow article aside .color.color-blue .lighter {
+        .container-narrow.documentation article aside .color.color-blue .lighter {
           background: #98d8e5; }
-        .page-documentation .container-narrow article aside .color.color-blue .light {
+        .container-narrow.documentation article aside .color.color-blue .light {
           background: #8ed4e3; }
-        .page-documentation .container-narrow article aside .color.color-blue .dark {
+        .container-narrow.documentation article aside .color.color-blue .dark {
           background: #72b8c7; }
-        .page-documentation .container-narrow article aside .color.color-blue .darker {
+        .container-narrow.documentation article aside .color.color-blue .darker {
           background: #68a7b5; }
-      .page-documentation .container-narrow article aside .color.color-green {
+      .container-narrow.documentation article aside .color.color-green {
         background: #CDDC39;
         height: 8rem; }
-        .page-documentation .container-narrow article aside .color.color-green .lighter {
+        .container-narrow.documentation article aside .color.color-green .lighter {
           background: #d6e25e; }
-        .page-documentation .container-narrow article aside .color.color-green .light {
+        .container-narrow.documentation article aside .color.color-green .light {
           background: #d2df4e; }
-        .page-documentation .container-narrow article aside .color.color-green .dark {
+        .container-narrow.documentation article aside .color.color-green .dark {
           background: #b6c332; }
-        .page-documentation .container-narrow article aside .color.color-green .darker {
+        .container-narrow.documentation article aside .color.color-green .darker {
           background: #a6b22e; }
-      .page-documentation .container-narrow article aside .color.color-red {
+      .container-narrow.documentation article aside .color.color-red {
         background: #F25641;
         height: 8rem; }
-        .page-documentation .container-narrow article aside .color.color-red .lighter {
+        .container-narrow.documentation article aside .color.color-red .lighter {
           background: #f47665; }
-        .page-documentation .container-narrow article aside .color.color-red .light {
+        .container-narrow.documentation article aside .color.color-red .light {
           background: #f36855; }
-        .page-documentation .container-narrow article aside .color.color-red .dark {
+        .container-narrow.documentation article aside .color.color-red .dark {
           background: #d74c39; }
-        .page-documentation .container-narrow article aside .color.color-red .darker {
+        .container-narrow.documentation article aside .color.color-red .darker {
           background: #c44534; }
-      .page-documentation .container-narrow article aside .color.color-yellow {
+      .container-narrow.documentation article aside .color.color-yellow {
         background: #FDD835;
         height: 8rem; }
-        .page-documentation .container-narrow article aside .color.color-yellow .lighter {
+        .container-narrow.documentation article aside .color.color-yellow .lighter {
           background: #fddf5b; }
-        .page-documentation .container-narrow article aside .color.color-yellow .light {
+        .container-narrow.documentation article aside .color.color-yellow .light {
           background: #fddc4b; }
-        .page-documentation .container-narrow article aside .color.color-yellow .dark {
+        .container-narrow.documentation article aside .color.color-yellow .dark {
           background: #e1c02f; }
-        .page-documentation .container-narrow article aside .color.color-yellow .darker {
+        .container-narrow.documentation article aside .color.color-yellow .darker {
           background: #ccae2a; }
