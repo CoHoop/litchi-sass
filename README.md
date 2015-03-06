@@ -1,6 +1,6 @@
 # litchi-sass
 
-The light-weight SASS framework web artisans need.
+litchi-sass is a light-weight css dependency solution for full-stack web developers.
 
 ## Referencing litchi as a dependency
 
@@ -8,7 +8,7 @@ To reference litchi as a whole, use:
 
 		<link rel="stylesheet" href="https://litchi.io/include/latest/litchi.min.css">
 
-However, litchi SASS comes in multiple micro setups, which helps web developers keep css dependencies solutions extremely light-weight. Depending on your project setup and scale, feel free to choose from the below and manage in a way that fits your needs.
+However, litchi SASS comes in multiple micro setups. These help web developers keep css dependency solutions extremely light-weight. Depending on your project setup and scale, feel free to choose from the below and manage in a way that fits your needs.
 
 - Alerts
 - Common
