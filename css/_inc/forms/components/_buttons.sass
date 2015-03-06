@@ -1,25 +1,18 @@
+$colors: blue, yellow, green, red
+
 .button, button
 	@extend .text-uppercase
 
 	background: white
 	text-decoration: none
-	padding: $base-unit-layout
-	padding-left: $double-half-unit-layout
-	padding-right: $double-half-unit-layout
+	padding: $base-unit-layout $double-half-unit-layout
 	cursor: pointer
 	border-color: $color-grey-200
 	color: $color-grey-300
-	min-width: inherit
 
-	+hover()
-		+box-shadow(0 1px 2px rgba(0,0,0,.125)) // This should not be black
-
+	+hover
 		border-color: $color-grey-300
 		color: $color-grey-300
-
-	&:active
-		border-color: $color-grey-500
-		color: $color-grey-500
 
 	&:disabled
 		background: $color-grey-50
@@ -33,22 +26,34 @@
 			border-color: $color-grey-100
 			color: $color-grey-200
 
-	&.litchi
-		border-color: $color-litchi
-		color: $color-litchi
-
 	&.blue
 		border-color: $color-blue
 		color: $color-blue
+
+		+hover
+			border-color: $color-blue-600
+			color: $color-blue-600
 
 	&.red
 		border-color: $color-red
 		color: $color-red
 
+		+hover
+			border-color: $color-red-600
+			color: $color-red-600
+
 	&.green
 		border-color: $color-green
 		color: $color-green
 
+		+hover
+			border-color: $color-green-600
+			color: $color-green-600
+
 	&.yellow
 		border-color: $color-yellow
 		color: $color-yellow
+
+		+hover
+			border-color: $color-yellow-600
+			color: $color-yellow-600

@@ -25,7 +25,7 @@ function compileSass (name, pathToSass) {
 			indentedSyntax: true
 		}))
 		.pipe(autoprefixer({
-			browsers: ["last 30 versions", "> 1%"],
+			browsers: ["last 20 versions", "> 1%"],
 			cascade: false
 		}))
 		.pipe(gulp.dest("css"))

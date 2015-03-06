@@ -2,7 +2,7 @@
   -webkit-border-radius: 3px;
   border-radius: 3px;
   background: #FDD835;
-  border: 1px solid shade(#FDD835, 10%);
+  border: 1px solid shade(#FDD835, 19%);
   color: rgba(0, 0, 0, 0.4);
   padding: 1rem;
   margin: 0 0 1rem;
@@ -12,7 +12,6 @@
   font-size: 1rem; }
   .alert .close {
     -webkit-transition: color .25s;
-    -moz-transition: color .25s;
     -o-transition: color .25s;
     transition: color .25s;
     color: inherit;
@@ -24,10 +23,10 @@
       color: rgba(0, 0, 0, 0.6); }
   .alert.info {
     background: #81CFE0;
-    border: 1px solid shade(#81CFE0, 10%); }
+    border: 1px solid shade(#81CFE0, 19%); }
   .alert.success {
     background: #CDDC39;
-    border: 1px solid shade(#CDDC39, 10%); }
+    border: 1px solid shade(#CDDC39, 19%); }
   .alert.error {
     background: #F25641;
-    border: 1px solid shade(#F25641, 10%); }
+    border: 1px solid shade(#F25641, 19%); }
