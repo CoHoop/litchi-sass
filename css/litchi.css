@@ -871,9 +871,21 @@ input:invalid, textarea:invalid {
       box-shadow: none;
       border-color: #eef1f3;
       color: #d1dadd; }
-  .button.primary, button.primary {
+  .button.litchi, button.litchi {
     border-color: #FF6961;
     color: #FF6961; }
+  .button.blue, button.blue {
+    border-color: #6699CC;
+    color: #6699CC; }
+  .button.red, button.red {
+    border-color: #F44336;
+    color: #F44336; }
+  .button.green, button.green {
+    border-color: #8BC34A;
+    color: #8BC34A; }
+  .button.yellow, button.yellow {
+    border-color: #FFC107;
+    color: #FFC107; }
 
 .label {
   -webkit-border-radius: 3px;
