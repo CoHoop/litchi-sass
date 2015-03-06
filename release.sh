@@ -9,8 +9,8 @@ if [ $branch_name == "master" ]; then
 	printf "\nDo you wish to make a new release tagged ${1}?\nThe release message is: ${2}\n"
 
 	select yn in "Yes" "No"; do
-	    case $yn in
-	        Yes )
+		case $yn in
+			Yes )
 			# Runs gulp tasks to ensure all is up-to-date
 
 			gulp common
@@ -22,7 +22,15 @@ if [ $branch_name == "master" ]; then
 
 			# Copies all exported css files
 
-			find css -name \*.css | xargs -I FILE cp FILE ../litchi-www/www/include/latest
+			find css -name \*.min.css | xargs -I FILE cp FILE ../litchi-www/www/include/latest
+
+			# Runs gulp tasks to compile JavaScript
+
+			gulp uglify
+
+			# Copies JavaScript file
+
+			cp js/app.js ../litchi-www/www/include/latest
 
 			# Runs all the git commands
 
@@ -34,10 +42,10 @@ if [ $branch_name == "master" ]; then
 			printf "\n\nThe release has been made successfully!\n"
 
 			break;;
-	        No )
+		No )
 			echo "Ok, maybe next time :-)"
 			exit;;
-	    esac
+		esac
 	done
 
 else
