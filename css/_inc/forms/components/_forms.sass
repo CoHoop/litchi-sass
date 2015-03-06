@@ -44,13 +44,13 @@ textarea
 
 input:invalid,
 textarea:invalid
-	color: $color-alert-error
+	color: $color-red
 
 	+hover
-		color: $color-alert-error
+		color: $color-red
 
 	&:focus
-		border-color: $color-alert-error
+		border-color: $color-red
 
 .file-button
 	position: relative
@@ -78,8 +78,6 @@ textarea:invalid
 		@extend .flex
 
 		height: $double-half-unit-layout
-		//position: relative
-		//cursor: pointer
 
 		.indicator
 			+border-radius(3px)
@@ -90,9 +88,6 @@ textarea:invalid
 			height: $base-unit-layout - rem(2px)
 			display: block
 			position: relative
-			//top: 50%
-			//left: 0
-			//margin: -($half-unit-layout - rem(1px)) 0 0
 			cursor: pointer
 
 			&:after

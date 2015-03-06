@@ -166,7 +166,7 @@ input, select, textarea, button, .button, .input {
 
 select {
   -webkit-appearance: none;
-  background: url("/images/icons/grey/arrow-bottom.svg") no-repeat right 1rem top 50%;
+  background: url("../images//icons/grey/arrow-bottom.svg") no-repeat right 1rem top 50%;
   background-size: 0.5rem; }
 
 textarea {
@@ -288,7 +288,7 @@ input:invalid, textarea:invalid {
     border-radius: 100%; }
 
 .flash-message {
-  background: url("/images/other/loading.gif") no-repeat center center transparent;
+  background: url("../images//other/loading.gif") no-repeat center center transparent;
   background-size: 22px 22px;
   min-height: 2rem;
   display: none;
