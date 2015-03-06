@@ -73,15 +73,19 @@ blockquote {
     font-size: 1rem; }
 
 a, .link {
-  -webkit-transition: color .25s;
-  -moz-transition: color .25s;
-  -o-transition: color .25s;
-  transition: color .25s;
   cursor: pointer;
-  text-decoration: underline;
-  color: #FF6961; }
+  color: #FF6961;
+  text-decoration: underline; }
   a:hover, a:focus, .link:hover, .link:focus {
-    color: #ff453b; }
+    text-decoration: none; }
+  a.link-blue, .link.link-blue {
+    color: #2196F3; }
+  a.link-green, .link.link-green {
+    color: #CDDC39; }
+  a.link-red, .link.link-red {
+    color: #F25641; }
+  a.link-yellow, .link.link-yellow {
+    color: #FFC107; }
 
 ul, ol {
   line-height: 1.5;
@@ -108,11 +112,11 @@ dl {
 
 table {
   max-width: 100%; }
-  table tr td {
+  table tr th, table tr td {
     border: 1px solid #d1dadd;
     padding: 0.5rem 1rem;
     color: #52676e; }
-  table thead td, table tfoot td {
+  table thead th, table thead td, table tfoot th, table tfoot td {
     font-weight: 700;
     color: #181e20;
     background: #f8f9fa; }

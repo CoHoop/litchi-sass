@@ -1,10 +1,20 @@
 a,
 .link
-	+transition(color .25s)
-
 	cursor: pointer
-	text-decoration: underline
 	color: $color-litchi
+	text-decoration: underline
 
 	+hover
-		color: darken($color-litchi, 7.5%)
+		text-decoration: none
+
+	&.link-blue
+		color: $color-blue
+
+	&.link-green
+		color: $color-green
+
+	&.link-red
+		color: $color-red
+
+	&.link-yellow
+		color: $color-yellow

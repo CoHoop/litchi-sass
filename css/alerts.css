@@ -2,38 +2,38 @@
   -webkit-border-radius: 3px;
   border-radius: 3px;
   padding: 1rem;
-  background: #F2E03D;
-  color: #d4c10e;
-  border: 1px solid #ecd610;
+  background: #FFC107;
+  color: #b98b00;
+  border: 1px solid #d39e00;
   margin: 0 0 1rem;
   line-height: 1.5;
   position: relative;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1rem; }
   .alert .close {
-    color: #d4c10e;
+    color: #b98b00;
     top: 1rem;
     right: 1rem;
     text-decoration: none;
     float: right; }
     .alert .close:hover, .alert .close:focus {
-      color: #bcab0d; }
+      color: #a07800; }
   .alert.info {
-    background: #00AEEF;
-    color: #003f56;
-    border: 1px solid #00516f; }
+    background: #2196F3;
+    color: #064475;
+    border: 1px solid #08528d; }
     .alert.info .close {
-      color: #003f56; }
+      color: #064475; }
       .alert.info .close:hover, .alert.info .close:focus {
-        color: #002c3c; }
+        color: #05365c; }
   .alert.success {
-    background: #D1F252;
-    color: #bae611;
-    border: 1px solid #c4ee23; }
+    background: #8BC34A;
+    color: #649130;
+    border: 1px solid #71a436; }
     .alert.success .close {
-      color: #bae611; }
+      color: #649130; }
       .alert.success .close:hover, .alert.success .close:focus {
-        color: #a7ce10; }
+        color: #577d2a; }
   .alert.error {
     background: #F25641;
     color: #901a0a;
