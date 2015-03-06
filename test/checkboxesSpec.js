@@ -1,5 +1,5 @@
-var firefox = require('selenium-webdriver/firefox'),
-	by = require('selenium-webdriver').By,
+var webDriver = require('selenium-webdriver'),
+	firefox = require('selenium-webdriver/Firefox'),
 	path = require('path');
 
 describe('checkboxes', function () {
@@ -11,35 +11,47 @@ describe('checkboxes', function () {
 		};
 
 		this.selectRed = function () {
-			driver.findElement(by.id('redCheckbox')).click();
+			driver.findElement(webDriver.By.id('redCheckbox')).click();
 		};
 
 		this.selectBlue = function () {
-			driver.findElement(by.id('blueCheckbox')).click();
+			driver.findElement(webDriver.By.id('blueCheckbox')).click();
 		};
 
 		this.selectGreen = function () {
-			driver.findElement(by.id('greenCheckbox')).click();
+			driver.findElement(webDriver.By.id('greenCheckbox')).click();
 		};
 
 		this.selectYellow = function () {
-			driver.findElement(by.id('yellowCheckbox')).click();
+			driver.findElement(webDriver.By.id('yellowCheckbox')).click();
 		};
 
 		this.selectFirst = function () {
-			driver.findElement(by.id('firstCheckbox')).click();
+			driver.findElement(webDriver.By.id('firstCheckbox')).click();
 		};
 
 		this.selectSecond = function () {
-			driver.findElement(by.id('secondCheckbox')).click();
+			driver.findElement(webDriver.By.id('secondCheckbox')).click();
+		};
+
+		this.pressTab = function () {
+			driver.switchTo().activeElement().sendKeys(webDriver.Key.TAB);
+		};
+
+		this.pressSpace = function () {
+			driver.switchTo().activeElement().sendKeys(webDriver.Key.SPACE);
+		};
+
+		this.pressEnter = function () {
+			driver.switchTo().activeElement().sendKeys(webDriver.Key.ENTER);
 		};
 
 		this.submit = function () {
-			driver.findElement(by.tagName('button')).click();
+			driver.findElement(webDriver.By.tagName('button')).click();
 		};
 
 		this.getSubmittedValues = function () {
-			return driver.findElement(by.id('submittedValue')).getText();
+			return driver.findElement(webDriver.By.id('submittedValue')).getText();
 		};
 	};
 	var checkboxesPage;
@@ -57,7 +69,7 @@ describe('checkboxes', function () {
 	it('should have the default value if no changes are made', function (done) {
 		checkboxesPage.submit();
 		checkboxesPage.getSubmittedValues().then(function (text) {
-			expect(text).toBe('?colourCheckboxes=["red","yellow"]&positionCheckboxes=["first"]');
+			expect(text).toBe('?name=Dean&colourCheckboxes=["red","yellow"]&positionCheckboxes=["first"]');
 			done();
 		});
 	});
@@ -67,7 +79,7 @@ describe('checkboxes', function () {
 		checkboxesPage.selectBlue();
 		checkboxesPage.submit();
 		checkboxesPage.getSubmittedValues().then(function (text) {
-			expect(text).toBe('?colourCheckboxes=["blue","yellow"]&positionCheckboxes=["first"]');
+			expect(text).toBe('?name=Dean&colourCheckboxes=["blue","yellow"]&positionCheckboxes=["first"]');
 			done();
 		});
 	});
@@ -77,7 +89,7 @@ describe('checkboxes', function () {
 		checkboxesPage.selectYellow();
 		checkboxesPage.submit();
 		checkboxesPage.getSubmittedValues().then(function (text) {
-			expect(text).toBe('?colourCheckboxes=["red","yellow"]&positionCheckboxes=["first"]');
+			expect(text).toBe('?name=Dean&colourCheckboxes=["red","yellow"]&positionCheckboxes=["first"]');
 			done();
 		});
 	});
@@ -86,7 +98,7 @@ describe('checkboxes', function () {
 		checkboxesPage.selectFirst();
 		checkboxesPage.submit();
 		checkboxesPage.getSubmittedValues().then(function (text) {
-			expect(text).toBe('?colourCheckboxes=["red","yellow"]&positionCheckboxes=[]');
+			expect(text).toBe('?name=Dean&colourCheckboxes=["red","yellow"]&positionCheckboxes=[]');
 			done();
 		});
 	});
@@ -95,7 +107,20 @@ describe('checkboxes', function () {
 		checkboxesPage.selectSecond();
 		checkboxesPage.submit();
 		checkboxesPage.getSubmittedValues().then(function (text) {
-			expect(text).toBe('?colourCheckboxes=["red","yellow"]&positionCheckboxes=["first","second"]');
+			expect(text).toBe('?name=Dean&colourCheckboxes=["red","yellow"]&positionCheckboxes=["first","second"]');
+			done();
+		});
+	});
+
+	it('should be usable with just the keyboard', function (done) {
+		checkboxesPage.pressTab();
+		checkboxesPage.pressTab();
+		checkboxesPage.pressSpace();
+		checkboxesPage.pressTab();
+		checkboxesPage.pressSpace();
+		checkboxesPage.pressEnter();
+		checkboxesPage.getSubmittedValues().then(function (text) {
+			expect(text).toBe('?name=Dean&colourCheckboxes=["blue","yellow"]&positionCheckboxes=["first"]');
 			done();
 		});
 	});

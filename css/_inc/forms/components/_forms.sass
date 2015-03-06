@@ -75,11 +75,11 @@ textarea:invalid
 		display: none
 
 	.checkbox, .radio-button
-		+clearfix
+		@extend .flex
 
 		height: $double-half-unit-layout
-		position: relative
-		cursor: pointer
+		//position: relative
+		//cursor: pointer
 
 		.indicator
 			+border-radius(3px)
@@ -89,10 +89,10 @@ textarea:invalid
 			width: $base-unit-layout - rem(2px)
 			height: $base-unit-layout - rem(2px)
 			display: block
-			position: absolute
-			top: 50%
-			left: 0
-			margin: -($half-unit-layout - rem(1px)) 0 0
+			position: relative
+			//top: 50%
+			//left: 0
+			//margin: -($half-unit-layout - rem(1px)) 0 0
 			cursor: pointer
 
 			&:after
@@ -112,9 +112,7 @@ textarea:invalid
 				margin-left: -($half-unit-layout / 2)
 
 		label
-			padding: 0 0 0 $double-half-unit-layout
-			height: $double-half-unit-layout
-			line-height: $double-half-unit-layout
+			padding: 0 0 0 $half-unit-layout
 			font-size: rem(14px)
 			cursor: pointer
 

@@ -1,6 +1,5 @@
 .alert {
   -webkit-border-radius: 3px;
-  -o-border-radius: 3px;
   border-radius: 3px;
   padding: 1rem;
   background: #F2E03D;
@@ -14,7 +13,9 @@
   .alert .close {
     color: #d4c10e;
     top: 1rem;
-    right: 1rem; }
+    right: 1rem;
+    text-decoration: none;
+    float: right; }
     .alert .close:hover, .alert .close:focus {
       color: #bcab0d; }
   .alert.info {
