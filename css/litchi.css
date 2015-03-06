@@ -529,6 +529,18 @@ h1, h2, h3, h4, h5, h6 {
 .padding-left-double {
   padding-left: 2rem; }
 
+.padding-quarter {
+  padding: 0.25rem; }
+
+.padding-half {
+  padding: 0.5rem; }
+
+.padding-base {
+  padding: 1rem; }
+
+.padding-double {
+  padding: 2rem; }
+
 .margin-top-quarter {
   margin-top: 0.25rem; }
 
@@ -576,6 +588,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .margin-left-double {
   margin-left: 2rem; }
+
+.margin-quarter {
+  margin: 0.25rem; }
+
+.margin-half {
+  margin: 0.5rem; }
+
+.margin-base {
+  margin: 1rem; }
+
+.margin-double {
+  margin: 2rem; }
 
 .text-center {
   text-align: center; }

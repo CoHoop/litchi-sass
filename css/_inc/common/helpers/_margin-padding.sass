@@ -20,7 +20,10 @@ $modifiers: (quarter: $quarter-unit-layout, half: $half-unit-layout, base: $unit
 @each $type in $types
 
 	@each $side in $sides
-
 		@each $key, $value in $modifiers
 			.#{$type}-#{$side}-#{$key}
 				#{$type}-#{$side}: $value
+
+	@each $key, $value in $modifiers
+		.#{$type}-#{$key}
+			#{$type}: $value
