@@ -14,7 +14,6 @@ if [ $branch_name == "master" ]; then
 				# Runs all gulp tasks to ensure all is up-to-date
 				gulp alerts
 				gulp common
-				gulp drop-downs
 				gulp forms
 				gulp labels
 				gulp litchi
