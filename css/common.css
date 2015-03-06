@@ -59,9 +59,17 @@ blockquote {
   blockquote p {
     margin-top: 0;
     font-size: 1.125rem; }
+    blockquote p:before, blockquote p:after {
+      font-weight: 700;
+      color: #b4c2c7; }
+    blockquote p:before {
+      content: "\201C";
+      margin-right: 0.25rem; }
+    blockquote p:after {
+      content: "\201D";
+      margin-left: 0.25rem; }
   blockquote small {
-    font-weight: 500;
-    font-style: italic;
+    font-weight: 700;
     font-size: 1rem; }
 
 a, .link {
