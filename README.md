@@ -13,7 +13,7 @@ However, litchi SASS comes in multiple micro setups, which helps web developers 
 - Common
 - Alerts
 - Drop Downs *(WIP)*
-- Forms *(WIP)*
+- Forms
 - Labels
 
 ### Common
@@ -27,12 +27,6 @@ To reference **common**, add the following into the head tag:
 To reference **alerts**, add the following into the head tag:
 
 		<link rel="stylesheet" href="https://litchi.io/include/latest/alerts.min.css">
-
-### Drop Downs *(WIP)*
-
-To reference **drop-downs**, add the following into the head tag:
-
-		<link rel="stylesheet" href="https://litchi.io/include/latest/drop-downs.min.css">
 
 ### Forms *(WIP)*
 
