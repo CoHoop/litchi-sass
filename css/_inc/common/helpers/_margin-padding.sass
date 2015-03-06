@@ -1,83 +1,26 @@
-// .wipe-margin,
-// .no-margin
-// 	margin: 0 !important
+.wipe-margin,
+.no-margin
+	margin: 0
 
-// .wipe-padding,
-// .no-padding
-// 	padding: 0 !important
+.wipe-padding,
+.no-padding
+	padding: 0
 
-// .wipe-margin-padding,
-// .no-margin-padding,
-// .wipe-padding-margin,
-// .no-padding-margin
-// 	margin: 0
-// 	padding: 0
+.wipe-margin-padding,
+.no-margin-padding,
+.wipe-padding-margin,
+.no-padding-margin
+	margin: 0
+	padding: 0
 
-// // TODO: Are these needed?
-// $sides: top, right, bottom, left
-// $modifiers: (1:(quarter-unit, $quarter-unit-layout), 2:(half-unit, $half-unit-layout), 3:(unit-layout, $unit-layout), 4:(double-unit, $double-unit-layout))
+$types: padding, margin
+$sides: top, right, bottom, left
+$modifiers: (quarter: $quarter-unit-layout, half: $half-unit-layout, base: $unit-layout, double: $double-unit-layout)
 
-// @each $modifiers, $keyNumber in $modifiers
-// 	$name: nth($keyNumber, 1)
-// 	$value: nth($keyNumber, 2)
-// 	.margin-all
-// 		&.#{$name}
-// 			margin: #{$value}
-// 	.padding-all
-// 		&.#{$name}
-// 			padding: #{$value}
+@each $type in $types
 
-// @each $side in $sides
-// 	$types: padding, margin
-// 	@each $type in $types
-// 		.#{$type}-#{$side}
-// 			@extend .margin-all
-// 			@if $side == top
-// 				#{$type}-right: 0 !important
-// 				#{$type}-bottom: 0 !important
-// 				#{$type}-left: 0 !important
-// 			@if $side == right
-// 				#{$type}-top: 0 !important
-// 				#{$type}-bottom: 0 !important
-// 				#{$type}-left: 0 !important
-// 			@if $side == bottom
-// 				#{$type}-top: 0 !important
-// 				#{$type}-right: 0 !important
-// 				#{$type}-left: 0 !important
-// 			@if $side == left
-// 				#{$type}-top: 0 !important
-// 				#{$type}-right: 0 !important
-// 				#{$type}-bottom: 0 !important
+	@each $side in $sides
 
-// // TODO: are these needed?
-// .padding-vertical
-// 	&.base-unit-layout
-// 		padding: $base-unit-layout 0
-// 	&.double-unit-layout
-// 		padding: $double-unit-layout 0
-// 	&.triple-unit-layout
-// 		padding: $triple-unit-layout 0
-
-// .padding-horizontal
-// 	&.base-unit-layout
-// 		padding: 0 $base-unit-layout
-// 	&.double-unit-layout
-// 		padding: 0 $double-unit-layout
-// 	&.triple-unit-layout
-// 		padding: 0 $triple-unit-layout
-
-// .margin-vertical
-// 	&.base-unit-layout
-// 		margin: $base-unit-layout 0
-// 	&.double-unit-layout
-// 		margin: $double-unit-layout 0
-// 	&.triple-unit-layout
-// 		margin: $triple-unit-layout 0
-
-// .margin-horizontal
-// 	&.base-unit-layout
-// 		margin: 0 $base-unit-layout
-// 	&.double-unit-layout
-// 		margin: 0 $double-unit-layout
-// 	&.triple-unit-layout
-// 		margin: 0 $triple-unit-layout
+		@each $key, $value in $modifiers
+			.#{$type}-#{$side}-#{$key}
+				#{$type}-#{$side}: $value
