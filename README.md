@@ -2,13 +2,7 @@ litchi.io is a fully-featured, open-source stack for web developers who work wit
 
 **Development on litchi-ng is currently in progress, please be considerate :-)**
 
-litchi-sass is a tailored SASS framework featuring:
-
-- **Jasmine (Karma)** for testing
-- **LoDash** for functional programming
-- **Angular Loading Bar** for better UX
-- **RxJS** for handling asynchronous operations
-- **Useful tailored** components, directives, and factories
+litchi-sass is a tailored SASS framework.
 
 #### Installation and setup
 
