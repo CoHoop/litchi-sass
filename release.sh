@@ -22,7 +22,7 @@ if [ $branch_name == "master" ]; then
 				printf "\n\n\nCopying files across to ../litchi-www\n\n"
 				# Copies all exported css files and images
 				find css -name \*.min.css | xargs -I FILE cp FILE ../litchi-www/www/include/latest
-				cp -r images ../litchi-www/www/include/images
+				cp -r images ../litchi-www/www/include
 				cp js/app.js ../litchi-www/www/include/latest
 
 				printf "\n\n\nGit magic happens now...\n\n"
