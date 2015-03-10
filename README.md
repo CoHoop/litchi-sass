@@ -1,6 +1,6 @@
-# litchi-sass
+litchi.io is a fully-featured, open-source stack for web developers who work with SASS, AngularJS, and PHP.
 
-litchi-sass is a light-weight css dependency solution for full-stack web developers.
+# litchi-sass
 
 ## Referencing litchi as a dependency
 
