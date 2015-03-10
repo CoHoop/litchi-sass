@@ -23,7 +23,7 @@ if [ $branch_name == "master" ]; then
 				# Copies all exported css files and images
 				find css -name \*.min.css | xargs -I FILE cp FILE ../litchi-www/www/include/latest
 				cp -r images ../litchi-www/www/include
-				cp js/app.js ../litchi-www/www/include/latest
+				cp js/litchi.js ../litchi-www/www/include/latest
 
 				printf "\n\n\nGit magic happens now...\n\n"
 				# Runs all the git commands

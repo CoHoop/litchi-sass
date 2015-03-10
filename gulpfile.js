@@ -57,8 +57,8 @@ gulp.task("litchi", function () {
 
 gulp.task("uglify", function () {
 	gulp.src("js/include/*.js")
-		.pipe(concat("app.js"))
-		.pipe(uglify("app.js"))
+		.pipe(concat("litchi.js"))
+		.pipe(uglify("litchi.js"))
 		.pipe(gulp.dest("js"))
 		.pipe(notify("JavaScript successfully compiled!"));
 });
