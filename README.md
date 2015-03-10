@@ -2,6 +2,8 @@ litchi.io is a fully-featured, open-source stack for web developers who work wit
 
 **Development on litchi-ng is currently in progress, please be considerate :-)**
 
+---
+
 litchi-sass is a tailored SASS framework.
 
 #### Installation and setup
