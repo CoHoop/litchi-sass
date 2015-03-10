@@ -1,88 +1,61 @@
 litchi.io is a fully-featured, open-source stack for web developers who work with SASS, AngularJS, and PHP.
 
-### Referencing litchi-sass as a dependency
+**Development on litchi-ng is currently in progress, please be considerate :-)**
+
+litchi-sass is a tailored SASS framework.
+
+#### Installation and setup
+
+1. Download dependencies
+
+		# Prior to this step, make sure you have Node.js installed
+		git clone https://github.com/litchi-io/litchi-sass.git && cd litchi-sass
+
+		# Installing gulp and its dependencies usually requires sudo
+		sudo npm install -g gulp && sudo npm install
+
+2. To start development
+
+		gulp
+
+#### Referencing litchi-sass as a dependency
 
 To reference litchi as a whole, use:
 
-		<link rel="stylesheet" href="https://litchi.io/include/latest/litchi.min.css">
+		<link rel="stylesheet" href="//litchi.io/include/latest/litchi.min.css">
 
-However, litchi SASS comes in multiple micro setups. These help web developers keep css dependency solutions extremely light-weight. Depending on your project setup and scale, feel free to choose from the below and manage in a way that fits your needs.
+#### Referencing litchi-sass micro-dependencies
+
+litchi-sass also comes in multiple micro setups. These help web developers keep css dependency solutions **extremely light-weight**. Depending on your project setup and scale, feel free to choose from the below and manage in a way that fits your needs.
 
 - Alerts
 - Common
 - Forms *(WIP)*
 - Labels
 
-#### Alerts
+##### Alerts
 
-To reference **alerts**, add the following into the head tag:
+		<link rel="stylesheet" href="//litchi.io/include/latest/alerts.min.css">
 
-		<link rel="stylesheet" href="https://litchi.io/include/latest/alerts.min.css">
+##### Common
 
-#### Common
+		<link rel="stylesheet" href="//litchi.io/include/latest/common.min.css">
 
-To reference **common**, add the following into the head tag:
+##### Forms *(WIP)*
 
-		<link rel="stylesheet" href="https://litchi.io/include/latest/common.min.css">
+		<link rel="stylesheet" href="//litchi.io/include/latest/forms.min.css">
+		<script type="text/javascript" src="//litchi.io/include/latest/litchi.js"></script>
 
-#### Forms *(WIP)*
+##### Labels
 
-To reference **forms**, add the following into the head tag:
+		<link rel="stylesheet" href="//litchi.io/include/latest/labels.min.css">
 
-		<link rel="stylesheet" href="https://litchi.io/include/latest/forms.min.css">
-
-#### Labels
-
-To reference **labels**, add the following into the head tag:
-
-		<link rel="stylesheet" href="https://litchi.io/include/latest/labels.min.css">
-
-### Setup
-
-#### Mac and Linux
-
-In the directory where the project is checked out, execute the following:
-
-		# Install Node.js and Ruby
-		sudo apt-get install nodejs
-
-		# Setup gulp
-		sudo npm install gulp -g
-		sudo npm install
-
-		# Start gulp monitoring
-		gulp
-
-#### Windows
-
-First, install Node.js. Then in the directory where the project is checked out, execute the following:
-
-		# Setup gulp
-		npm install gulp -g
-		npm install
-
-		# Start gulp monitoring
-		gulp
-
-### Running tests
-
-#### Mac and Linux
+#### Running tests (WIP)
 
 In the directory where the project is checked out, execute the following:
 
 		# Setup required packages
 		sudo npm install jasmine-node selenium-webdriver
-
-		# Execute the tests
-		cd examples/
-		jasmine-node *.js
-
-#### Windows
-
-In the directory where the project is checked out, execute the following:
-
-		# Setup required packages
-		npm install jasmine-node selenium-webdriver
 
 		# Execute the tests
 		cd examples/
