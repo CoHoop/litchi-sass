@@ -1,8 +1,6 @@
 litchi.io is a fully-featured, open-source stack for web developers who work with SASS, AngularJS, and PHP.
 
-# litchi-sass
-
-## Referencing litchi as a dependency
+### Referencing litchi-sass as a dependency
 
 To reference litchi as a whole, use:
 
@@ -15,33 +13,33 @@ However, litchi SASS comes in multiple micro setups. These help web developers k
 - Forms *(WIP)*
 - Labels
 
-### Alerts
+#### Alerts
 
 To reference **alerts**, add the following into the head tag:
 
 		<link rel="stylesheet" href="https://litchi.io/include/latest/alerts.min.css">
 
-### Common
+#### Common
 
 To reference **common**, add the following into the head tag:
 
 		<link rel="stylesheet" href="https://litchi.io/include/latest/common.min.css">
 
-### Forms *(WIP)*
+#### Forms *(WIP)*
 
 To reference **forms**, add the following into the head tag:
 
 		<link rel="stylesheet" href="https://litchi.io/include/latest/forms.min.css">
 
-### Labels
+#### Labels
 
 To reference **labels**, add the following into the head tag:
 
 		<link rel="stylesheet" href="https://litchi.io/include/latest/labels.min.css">
 
-## Setup
+### Setup
 
-### Mac and Linux
+#### Mac and Linux
 
 In the directory where the project is checked out, execute the following:
 
@@ -55,7 +53,7 @@ In the directory where the project is checked out, execute the following:
 		# Start gulp monitoring
 		gulp
 
-### Windows
+#### Windows
 
 First, install Node.js. Then in the directory where the project is checked out, execute the following:
 
@@ -66,9 +64,9 @@ First, install Node.js. Then in the directory where the project is checked out, 
 		# Start gulp monitoring
 		gulp
 
-## Running tests
+### Running tests
 
-### Mac and Linux
+#### Mac and Linux
 
 In the directory where the project is checked out, execute the following:
 
@@ -79,7 +77,7 @@ In the directory where the project is checked out, execute the following:
 		cd examples/
 		jasmine-node *.js
 
-### Windows
+#### Windows
 
 In the directory where the project is checked out, execute the following:
 
