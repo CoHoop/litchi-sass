@@ -54,9 +54,8 @@ litchi-sass also comes in multiple micro setups. These help web developers keep 
 
 In the directory where the project is checked out, execute the following:
 
-		# Setup required packages
-		sudo npm install jasmine-node selenium-webdriver
+		# Setup required packages and cd into examples
+		sudo npm install jasmine-node selenium-webdriver && cd examples
 
 		# Execute the tests
-		cd examples/
 		jasmine-node *.js
