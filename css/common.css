@@ -637,7 +637,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .container-full-screen, .container-narrow {
   zoom: 1;
-  width: 100%; }
+  width: 100%;
+  margin: 10px; }
   .container-full-screen:before, .container-full-screen:after, .container-narrow:before, .container-narrow:after {
     content: "";
     display: table; }

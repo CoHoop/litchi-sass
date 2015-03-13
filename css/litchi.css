@@ -465,7 +465,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
 
-.block-center, .container-full-screen, .container-narrow, .container-narrow.documentation header .logo {
+.block-center, .container-full-screen, .container-narrow, .documentation header .logo, .page-project header .logo, .page-project section {
   margin-left: auto;
   margin-right: auto; }
 
@@ -914,7 +914,8 @@ input:invalid, textarea:invalid {
 
 .container-full-screen, .container-narrow {
   zoom: 1;
-  width: 100%; }
+  width: 100%;
+  margin: 10px; }
   .container-full-screen:before, .container-full-screen:after, .container-narrow:before, .container-narrow:after {
     content: "";
     display: table; }
@@ -931,36 +932,36 @@ footer {
   text-align: center;
   padding: 1rem; }
 
-.container-narrow.documentation header {
+.documentation header {
   padding: 8rem 0; }
-  .container-narrow.documentation header .logo {
+  .documentation header .logo {
     width: 12rem;
     height: 6rem;
     background: url("../images//logo/logo-03.svg") no-repeat center center;
     background-size: contain;
     display: block; }
-.container-narrow.documentation section {
+.documentation section {
   padding: 0 0 2rem; }
-  .container-narrow.documentation section .section-headline {
+  .documentation section .section-headline {
     font-size: 1.875rem;
     border-bottom: 1px solid #eef1f3;
     color: #52676e; }
-.container-narrow.documentation article {
+.documentation article {
   zoom: 1;
   position: relative;
   margin: 3rem 0; }
-  .container-narrow.documentation article:before, .container-narrow.documentation article:after {
+  .documentation article:before, .documentation article:after {
     content: "";
     display: table; }
-  .container-narrow.documentation article:after {
+  .documentation article:after {
     clear: both; }
-  .container-narrow.documentation article aside {
+  .documentation article aside {
     float: left;
     width: 70%; }
-    .container-narrow.documentation article aside:first-of-type {
+    .documentation article aside:first-of-type {
       width: 30%;
       min-height: 1rem; }
-      .container-narrow.documentation article aside:first-of-type p {
+      .documentation article aside:first-of-type p {
         max-width: 26%;
         overflow: hidden;
         -o-text-overflow: ellipsis;
@@ -976,7 +977,7 @@ footer {
         height: 1rem;
         line-height: 1rem;
         margin-top: -0.5rem; }
-    .container-narrow.documentation article aside .color {
+    .documentation article aside .color {
       width: 100%;
       height: 3rem;
       line-height: 3rem;
@@ -986,44 +987,44 @@ footer {
       color: white;
       font-size: 0.75rem;
       font-weight: 400; }
-      .container-narrow.documentation article aside .color.red {
+      .documentation article aside .color.red {
         background: #FF4040; }
-      .container-narrow.documentation article aside .color.blue {
+      .documentation article aside .color.blue {
         background: #81CFE0; }
-      .container-narrow.documentation article aside .color.alert-warning {
+      .documentation article aside .color.alert-warning {
         background: #FDD835; }
-      .container-narrow.documentation article aside .color.alert-info {
+      .documentation article aside .color.alert-info {
         background: #81CFE0; }
-      .container-narrow.documentation article aside .color.alert-success {
+      .documentation article aside .color.alert-success {
         background: #CDDC39; }
-      .container-narrow.documentation article aside .color.alert-error {
+      .documentation article aside .color.alert-error {
         background: #F25641; }
-      .container-narrow.documentation article aside .color.grey {
+      .documentation article aside .color.grey {
         width: 50%;
         float: left; }
-      .container-narrow.documentation article aside .color.grey-50 {
+      .documentation article aside .color.grey-50 {
         background: #f8f9fa;
         color: #839ba3; }
-      .container-narrow.documentation article aside .color.grey-100 {
+      .documentation article aside .color.grey-100 {
         background: #eef1f3;
         color: #839ba3; }
-      .container-narrow.documentation article aside .color.grey-200 {
+      .documentation article aside .color.grey-200 {
         background: #d1dadd; }
-      .container-narrow.documentation article aside .color.grey-300 {
+      .documentation article aside .color.grey-300 {
         background: #b4c2c7; }
-      .container-narrow.documentation article aside .color.grey-400 {
+      .documentation article aside .color.grey-400 {
         background: #a0b3b9; }
-      .container-narrow.documentation article aside .color.grey-500 {
+      .documentation article aside .color.grey-500 {
         background: #839ba3; }
-      .container-narrow.documentation article aside .color.grey-600 {
+      .documentation article aside .color.grey-600 {
         background: #68838c; }
-      .container-narrow.documentation article aside .color.grey-700 {
+      .documentation article aside .color.grey-700 {
         background: #52676e; }
-      .container-narrow.documentation article aside .color.grey-800 {
+      .documentation article aside .color.grey-800 {
         background: #354347; }
-      .container-narrow.documentation article aside .color.grey-900 {
+      .documentation article aside .color.grey-900 {
         background: #181e20; }
-      .container-narrow.documentation article aside .color .light, .container-narrow.documentation article aside .color .lighter, .container-narrow.documentation article aside .color .dark, .container-narrow.documentation article aside .color .darker {
+      .documentation article aside .color .light, .documentation article aside .color .lighter, .documentation article aside .color .dark, .documentation article aside .color .darker {
         position: absolute;
         width: 25%;
         height: 3rem;
@@ -1032,53 +1033,70 @@ footer {
         left: 25%;
         font-weight: 400;
         font-size: 0.625rem; }
-        .container-narrow.documentation article aside .color .light.lighter, .container-narrow.documentation article aside .color .lighter.lighter, .container-narrow.documentation article aside .color .dark.lighter, .container-narrow.documentation article aside .color .darker.lighter {
+        .documentation article aside .color .light.lighter, .documentation article aside .color .lighter.lighter, .documentation article aside .color .dark.lighter, .documentation article aside .color .darker.lighter {
           left: 0%; }
-        .container-narrow.documentation article aside .color .light.dark, .container-narrow.documentation article aside .color .lighter.dark, .container-narrow.documentation article aside .color .dark.dark, .container-narrow.documentation article aside .color .darker.dark {
+        .documentation article aside .color .light.dark, .documentation article aside .color .lighter.dark, .documentation article aside .color .dark.dark, .documentation article aside .color .darker.dark {
           left: 50%; }
-        .container-narrow.documentation article aside .color .light.darker, .container-narrow.documentation article aside .color .lighter.darker, .container-narrow.documentation article aside .color .dark.darker, .container-narrow.documentation article aside .color .darker.darker {
+        .documentation article aside .color .light.darker, .documentation article aside .color .lighter.darker, .documentation article aside .color .dark.darker, .documentation article aside .color .darker.darker {
           left: 75%; }
-      .container-narrow.documentation article aside .color.color-blue {
+      .documentation article aside .color.color-blue {
         background: #81CFE0;
         height: 8rem; }
-        .container-narrow.documentation article aside .color.color-blue .lighter {
+        .documentation article aside .color.color-blue .lighter {
           background: #98d8e5; }
-        .container-narrow.documentation article aside .color.color-blue .light {
+        .documentation article aside .color.color-blue .light {
           background: #8ed4e3; }
-        .container-narrow.documentation article aside .color.color-blue .dark {
+        .documentation article aside .color.color-blue .dark {
           background: #72b8c7; }
-        .container-narrow.documentation article aside .color.color-blue .darker {
+        .documentation article aside .color.color-blue .darker {
           background: #68a7b5; }
-      .container-narrow.documentation article aside .color.color-green {
+      .documentation article aside .color.color-green {
         background: #CDDC39;
         height: 8rem; }
-        .container-narrow.documentation article aside .color.color-green .lighter {
+        .documentation article aside .color.color-green .lighter {
           background: #d6e25e; }
-        .container-narrow.documentation article aside .color.color-green .light {
+        .documentation article aside .color.color-green .light {
           background: #d2df4e; }
-        .container-narrow.documentation article aside .color.color-green .dark {
+        .documentation article aside .color.color-green .dark {
           background: #b6c332; }
-        .container-narrow.documentation article aside .color.color-green .darker {
+        .documentation article aside .color.color-green .darker {
           background: #a6b22e; }
-      .container-narrow.documentation article aside .color.color-red {
+      .documentation article aside .color.color-red {
         background: #F25641;
         height: 8rem; }
-        .container-narrow.documentation article aside .color.color-red .lighter {
+        .documentation article aside .color.color-red .lighter {
           background: #f47665; }
-        .container-narrow.documentation article aside .color.color-red .light {
+        .documentation article aside .color.color-red .light {
           background: #f36855; }
-        .container-narrow.documentation article aside .color.color-red .dark {
+        .documentation article aside .color.color-red .dark {
           background: #d74c39; }
-        .container-narrow.documentation article aside .color.color-red .darker {
+        .documentation article aside .color.color-red .darker {
           background: #c44534; }
-      .container-narrow.documentation article aside .color.color-yellow {
+      .documentation article aside .color.color-yellow {
         background: #FDD835;
         height: 8rem; }
-        .container-narrow.documentation article aside .color.color-yellow .lighter {
+        .documentation article aside .color.color-yellow .lighter {
           background: #fddf5b; }
-        .container-narrow.documentation article aside .color.color-yellow .light {
+        .documentation article aside .color.color-yellow .light {
           background: #fddc4b; }
-        .container-narrow.documentation article aside .color.color-yellow .dark {
+        .documentation article aside .color.color-yellow .dark {
           background: #e1c02f; }
-        .container-narrow.documentation article aside .color.color-yellow .darker {
+        .documentation article aside .color.color-yellow .darker {
           background: #ccae2a; }
+
+.page-project {
+  background: url("../images//other/project-background.jpg") no-repeat center center; }
+  .page-project header {
+    padding: 8rem 0; }
+    .page-project header .logo {
+      width: 12rem;
+      height: 6rem;
+      background: url("../images//logo/logo-05.svg") no-repeat center center;
+      background-size: contain;
+      display: block; }
+  .page-project section {
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    width: 31.25rem;
+    height: 18.75rem;
+    border: 2px solid #d1dadd; }

@@ -1,0 +1,24 @@
+.page-project
+	background: url("#{$image-base}/other/project-background.jpg") no-repeat center center
+
+	header
+		padding: ($quadruple-unit-layout * 2) 0
+
+		.logo
+			@extend .block-center
+
+			width: $quadruple-unit-layout * 3
+			height: $quadruple-unit-layout * 1.5
+			background: url("#{$image-base}/logo/logo-05.svg") no-repeat center center
+			background-size: contain
+			display: block
+
+	section
+
+		@extend .block-center
+		+border-radius(3px)
+		width: rem(500px)
+		height: rem(300px)
+		border: 2px solid $color-grey-200 
+
+
