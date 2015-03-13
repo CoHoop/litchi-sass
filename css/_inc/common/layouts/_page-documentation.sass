@@ -19,6 +19,32 @@
 			border-bottom: 1px solid $color-grey-100
 			color: $color-grey-700
 
+		&#flex-layouts
+			ul
+				li
+					height: $triple-unit-layout
+					background: $color-grey-50
+					font:
+						size: rem(12px)
+
+					&:nth-of-type(even)
+						background: $color-grey-100
+
+			.box-positioning
+				> div
+					+border-radius(3px)
+
+					padding: $base-unit-layout
+					background: $color-grey-50
+					min-height: $triple-unit-layout * 2
+
+					.box
+						+border-radius(100%)
+
+						width: $double-unit-layout
+						height: $double-unit-layout
+						background: $color-grey-200
+
 	article
 		+clearfix
 

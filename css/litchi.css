@@ -946,6 +946,24 @@ footer {
     font-size: 1.875rem;
     border-bottom: 1px solid #eef1f3;
     color: #52676e; }
+  .documentation section#flex-layouts ul li {
+    height: 3rem;
+    background: #f8f9fa;
+    font-size: 0.75rem; }
+    .documentation section#flex-layouts ul li:nth-of-type(even) {
+      background: #eef1f3; }
+  .documentation section#flex-layouts .box-positioning > div {
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    padding: 1rem;
+    background: #f8f9fa;
+    min-height: 6rem; }
+    .documentation section#flex-layouts .box-positioning > div .box {
+      -webkit-border-radius: 100%;
+      border-radius: 100%;
+      width: 2rem;
+      height: 2rem;
+      background: #d1dadd; }
 .documentation article {
   zoom: 1;
   position: relative;
